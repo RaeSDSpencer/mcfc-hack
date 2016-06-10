@@ -49,6 +49,43 @@ p {
 	margin-bottom: 1em;
 	letter-spacing: -.007em;
 }
+
+/* Button styles */
+button {
+  background: $yellow;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: .15em;
+  color: $textcol;
+  padding: 15px 15px 15px 30px;
+  width: 33%;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  transform: translate(0,-50%);
+  float: right;
+  margin-right: 15px;
+  font-weight: 400;
+  transition: background .2s, padding .3s;
+	@media (min-width: $mobile) {
+    margin-right: 50px;
+  }
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(0,-50%);
+  }
+  &:hover {
+    background: $textcol;
+    color: $yellow;
+    font-weight: 500;
+    padding-left: 36px;
+  }
+}
+
+
 /* Header */
 .header-inner {
 	max-width: 400px;
@@ -185,7 +222,9 @@ p {
 }
 
 
-/* Layout */
+
+/* About */
+
 
 
 /* Timeline */
@@ -193,8 +232,16 @@ p {
 
 
 /* Footer */
-
-
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 15px;
+  @media (min-width: $mobile) {
+    text-align: left;
+    padding: 0 50px;
+  }
+}
 
 
 

@@ -114,6 +114,41 @@ p {
   margin-bottom: 1em;
   letter-spacing: -.007em; }
 
+/* Button styles */
+button {
+  background: #FFC758;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: .15em;
+  color: #2f3133;
+  padding: 15px 15px 15px 30px;
+  width: 33%;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  float: right;
+  margin-right: 15px;
+  font-weight: 400;
+  -webkit-transition: background .2s, padding .3s;
+  transition: background .2s, padding .3s; }
+  @media (min-width: 767px) {
+    button {
+      margin-right: 50px; } }
+  button svg {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
+  button:hover {
+    background: #2f3133;
+    color: #FFC758;
+    font-weight: 500;
+    padding-left: 36px; }
+
 /* Header */
 .header-inner {
   max-width: 400px; }
@@ -243,9 +278,19 @@ p {
       #clockdiv .smalltext {
         font-size: 20px; } }
 
-/* Layout */
+/* About */
 /* Timeline */
 /* Footer */
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 15px; }
+  @media (min-width: 767px) {
+    footer {
+      text-align: left;
+      padding: 0 50px; } }
+
 /* Plugin styles */
 /* Fonts */
 @font-face {
