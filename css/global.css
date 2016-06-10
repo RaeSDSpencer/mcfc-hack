@@ -98,7 +98,7 @@ body {
 
 /* Type */
 h1, h2, h3, h4 {
-  font-family: "freight-sans-compressed-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", Impact;
   font-weight: 600;
   text-transform: uppercase; }
 
@@ -148,7 +148,7 @@ p {
         font-size: 60px;
         padding-top: 56px; } }
   #header p {
-    font-family: "freight-sans-compressed-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", Impact;
     color: #828385;
     font-size: 18px;
     line-height: 1.4; }
