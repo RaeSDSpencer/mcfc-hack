@@ -201,22 +201,30 @@ p {
 /* Footer */
 /* Plugin styles */
 #clockdiv {
-  font-family: sans-serif;
+  font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", Impact;
   display: inline-block;
   text-align: center;
-  font-size: 30px; }
+  font-size: 70px;
+  width: 100%; }
+  @media (min-width: 767px) {
+    #clockdiv {
+      font-size: 180px; } }
 
 #clockdiv > div {
   padding: 10px;
   display: inline-block; }
 
 #clockdiv div > span {
-  padding: 15px;
   display: inline-block; }
 
 .smalltext {
   padding-top: 5px;
-  font-size: 16px; }
+  font-size: 18px;
+  color: #828385;
+  text-transform: uppercase; }
+  @media (min-width: 767px) {
+    .smalltext {
+      font-size: 20px; } }
 
 /* Fonts */
 @font-face {

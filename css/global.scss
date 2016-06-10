@@ -5,7 +5,7 @@ $black:				#2a2c2e;
 $darkgrey:		#313335;
 $midgrey:			#828385;
 $lightgrey:		#ecedf0;
-$freight:			"Gotham Cond SSm A","Gotham Cond SSm B",Impact;
+$gotham:			"Gotham Cond SSm A","Gotham Cond SSm B",Impact;
 $mobile: 			767px;
 $tablet:			991px;
 $desktop:			992px;
@@ -34,7 +34,7 @@ body {
 }
 /* Type */
 h1, h2, h3, h4 {
-	font-family: $freight;
+	font-family: $gotham;
 	font-weight: 600;
 	text-transform: uppercase;
 }
@@ -80,7 +80,7 @@ p {
 		}
 	}
 	p {
-		font-family: $freight;
+		font-family: $gotham;
 		color: $midgrey;
 		font-size: 16px;
 		line-height: 1.4;
@@ -154,10 +154,14 @@ p {
 
 /* Plugin styles */
 #clockdiv{
-	font-family: sans-serif;
+	font-family: $gotham;
 	display: inline-block;
 	text-align: center;
-	font-size: 30px;
+	font-size: 70px;
+  width: 100%;
+  @media (min-width: $mobile) {
+    font-size: 180px;
+  }
 }
 
 #clockdiv > div{
@@ -166,12 +170,16 @@ p {
 }
 
 #clockdiv div > span{
-	padding: 15px;
 	display: inline-block;
 }
 .smalltext{
 	padding-top: 5px;
-	font-size: 16px;
+	font-size: 18px;
+  color: $midgrey;
+  text-transform: uppercase;
+  @media (min-width: $mobile) {
+    font-size: 20px;
+  }
 }
 
 /* Fonts */
