@@ -152,7 +152,10 @@ p {
     line-height: 1.4;
     letter-spacing: .01em;
     text-transform: uppercase;
-    margin-bottom: 1.3em; }
+    margin-bottom: 0; }
+    @media (min-width: 767px) {
+      #header p {
+        margin-bottom: 1.3em; } }
     @media (max-width: 374px) {
       #header p {
         font-size: 14px;
@@ -176,7 +179,8 @@ p {
         float: right;
         position: relative;
         width: 25%;
-        padding-top: 62px; }
+        box-sizing: content-box;
+        padding: 62px 6px 0 0; }
         #header .date-wrap:after {
           content: ' ';
           display: block;
@@ -186,6 +190,9 @@ p {
           width: 999em;
           height: 6px;
           background: #2a2c2e; } }
+    @media (min-width: 991px) {
+      #header .date-wrap {
+        padding: 62px 26px 0 0; } }
 
 .sticky-nav svg {
   width: 37px;
@@ -196,36 +203,50 @@ p {
       height: 45px; } }
 
 /* Countdown */
+#clockdiv {
+  font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", Impact;
+  text-align: center;
+  font-size: 70px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 50px 10px 100px 10px;
+  margin: 0 auto; }
+  #clockdiv:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 767px) {
+    #clockdiv {
+      font-size: 180px;
+      padding-top: 40px;
+      padding-bottom: 70px; } }
+  @media (min-width: 991px) {
+    #clockdiv {
+      padding-left: 50px;
+      padding-right: 50px; } }
+  @media (max-width: 767px) {
+    #clockdiv {
+      max-width: 500px; } }
+  #clockdiv .clock-part {
+    width: 25%;
+    float: left;
+    border-right: #ecedf0 1px solid; }
+    #clockdiv .clock-part:nth-child(4) {
+      border-right: 0; }
+  #clockdiv .smalltext {
+    padding-top: 5px;
+    font-size: 18px;
+    color: #828385;
+    text-transform: uppercase;
+    margin-bottom: .7em; }
+    @media (min-width: 767px) {
+      #clockdiv .smalltext {
+        font-size: 20px; } }
+
 /* Layout */
 /* Timeline */
 /* Footer */
 /* Plugin styles */
-#clockdiv {
-  font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", Impact;
-  display: inline-block;
-  text-align: center;
-  font-size: 70px;
-  width: 100%; }
-  @media (min-width: 767px) {
-    #clockdiv {
-      font-size: 180px; } }
-
-#clockdiv > div {
-  padding: 10px;
-  display: inline-block; }
-
-#clockdiv div > span {
-  display: inline-block; }
-
-.smalltext {
-  padding-top: 5px;
-  font-size: 18px;
-  color: #828385;
-  text-transform: uppercase; }
-  @media (min-width: 767px) {
-    .smalltext {
-      font-size: 20px; } }
-
 /* Fonts */
 @font-face {
   font-family: "Gotham Cond SSm A";

@@ -86,7 +86,10 @@ p {
 		line-height: 1.4;
     letter-spacing: .01em;
     text-transform: uppercase;
-    margin-bottom: 1.3em;
+    margin-bottom: 0;
+		@media (min-width: $mobile) {
+      margin-bottom: 1.3em;
+    }
 		@media (max-width: 374px) {
 			font-size: 14px;
       letter-spacing: 0;
@@ -112,7 +115,8 @@ p {
 			float: right;
 			position: relative;
 			width: 25%;
-			padding-top: 62px;
+      box-sizing: content-box;
+      padding: 62px 6px 0 0;
 			&:after {
 				content: ' ';
 				display: block;
@@ -124,6 +128,9 @@ p {
 				background: $black;
 			}
 		}
+		@media (min-width: $tablet) {
+      padding: 62px 26px 0 0;
+    }
 	}
 }
 .sticky-nav svg {
@@ -136,6 +143,46 @@ p {
 }
 
 /* Countdown */
+#clockdiv {
+	font-family: $gotham;
+	text-align: center;
+	font-size: 70px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 50px 10px 100px 10px;
+  margin: 0 auto;
+  @include clearfix;
+  @media (min-width: $mobile) {
+    font-size: 180px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+  @media (min-width: $tablet) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  @media (max-width: $mobile) {
+    max-width: 500px;
+  }
+  .clock-part {
+    width: 25%;
+	  float: left;
+    border-right: $lightgrey 1px solid;
+    &:nth-child(4) {
+      border-right: 0;
+    }
+  }
+  .smalltext{
+  	padding-top: 5px;
+  	font-size: 18px;
+    color: $midgrey;
+    text-transform: uppercase;
+    margin-bottom: .7em;
+    @media (min-width: $mobile) {
+      font-size: 20px;
+    }
+  }
+}
 
 
 /* Layout */
@@ -153,34 +200,7 @@ p {
 
 
 /* Plugin styles */
-#clockdiv{
-	font-family: $gotham;
-	display: inline-block;
-	text-align: center;
-	font-size: 70px;
-  width: 100%;
-  @media (min-width: $mobile) {
-    font-size: 180px;
-  }
-}
 
-#clockdiv > div{
-	padding: 10px;
-	display: inline-block;
-}
-
-#clockdiv div > span{
-	display: inline-block;
-}
-.smalltext{
-	padding-top: 5px;
-	font-size: 18px;
-  color: $midgrey;
-  text-transform: uppercase;
-  @media (min-width: $mobile) {
-    font-size: 20px;
-  }
-}
 
 /* Fonts */
 @import "fonts";
