@@ -1,0 +1,200 @@
+/**
+ * 1.0 - Reset
+ *
+ * Resetting and rebuilding styles have been helped along thanks to the fine
+ * work of Eric Meyer, Nicolas Gallagher, Jonathan Neal, and Blueprint.
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: bottom; }
+
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  height: 100%; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+  display: block; }
+
+ol,
+ul {
+  list-style: none; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ""; }
+
+blockquote,
+q {
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  quotes: none; }
+
+a:focus {
+  outline: 2px solid #c1c1c1;
+  outline: 2px solid rgba(51, 51, 51, 0.3); }
+
+a:hover,
+a:active {
+  outline: 0; }
+
+a img {
+  border: 0; }
+
+b,
+strong {
+  font-weight: 700; }
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic; }
+
+body {
+  height: 100%;
+  background: #fff;
+  text-align: left;
+  color: #36383A;
+  line-height: 1.3;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-top: 4px #FFD760 solid; }
+
+/* Type */
+h1, h2, h3, h4 {
+  font-family: "freight-sans-compressed-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 70px;
+  letter-spacing: -.025em;
+  margin-bottom: 1em;
+  line-height: .7; }
+
+p {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 1em;
+  letter-spacing: -.007em; }
+
+/* Header */
+.header-inner {
+  max-width: 1200px; }
+  @media (max-width: 767px) {
+    .header-inner {
+      width: 400px; } }
+  @media (min-width: 767px) {
+    .header-inner {
+      margin: 0 auto; } }
+
+#header {
+  width: 100%;
+  overflow: hidden; }
+  #header:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #header svg {
+    width: 59px;
+    height: 59px; }
+    @media (min-width: 767px) {
+      #header svg {
+        width: 61px;
+        height: 61px; } }
+  #header h1 {
+    font-size: 40px;
+    margin-bottom: .15em;
+    float: left;
+    padding-top: 23px; }
+    @media (min-width: 767px) {
+      #header h1 {
+        font-size: 60px;
+        padding-top: 56px; } }
+  #header p {
+    font-family: "freight-sans-compressed-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #828385;
+    font-size: 18px;
+    line-height: 1.4; }
+    @media (max-width: 374px) {
+      #header p {
+        font-size: 16px; } }
+  #header .logo {
+    float: left;
+    margin: 16px 8px 0 15px; }
+    @media (min-width: 767px) {
+      #header .logo {
+        margin: 44px 12px 0 40px; } }
+  @media (max-width: 767px) {
+    #header .location {
+      margin-left: 6px; } }
+  @media (min-width: 767px) {
+    #header .location {
+      display: block; } }
+  #header .date-wrap {
+    float: left; }
+    @media (min-width: 767px) {
+      #header .date-wrap {
+        float: right;
+        position: relative;
+        width: 25%;
+        padding-top: 56px; }
+        #header .date-wrap:after {
+          content: ' ';
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 999em;
+          height: 6px;
+          background: #303234; } }
+
+.sticky-nav svg {
+  width: 37px;
+  height: 37px; }
+  @media (min-width: 767px) {
+    .sticky-nav svg {
+      width: 45px;
+      height: 45px; } }
+
+/* Countdown */
+/* Layout */
+/* Timeline */
+/* Footer */
+/* Plugin styles */

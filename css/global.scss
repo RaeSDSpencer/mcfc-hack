@@ -1,0 +1,155 @@
+$blue:				#C7EDFF;
+$yellow:			#FFD760;
+$textcol:			#36383A;
+$black:				#303234;
+$darkgrey:		#383A3D;
+$midgrey:			#828385;
+$lightgrey:		#F5F6F8;
+$freight:			"freight-sans-compressed-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$helvetica:		"Helvetica Neue", Helvetica, Arial, sans-serif;
+$mobile: 			767px;
+$tablet:			991px;
+$desktop:			992px;
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@import "reset";
+
+body {
+	height: 100%;
+	background: #fff;
+	text-align: left;
+	color: $textcol;
+	line-height: 1.3;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	border-top: 4px $yellow solid;
+}
+/* Type */
+h1, h2, h3, h4 {
+	font-family: $freight;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+h1 {
+  font-size: 70px;
+	letter-spacing: -.025em;
+	margin-bottom: 1em;
+	line-height: .7;
+}
+p {
+	font-family: $helvetica;
+  font-size: 16px;
+	margin-bottom: 1em;
+	letter-spacing: -.007em;
+}
+/* Header */
+.header-inner {
+	max-width: 1200px;
+	@media (max-width: $mobile) {
+		width: 400px;
+	}
+	@media (min-width: $mobile) {
+		margin: 0 auto;
+	}
+}
+#header {
+	width: 100%;
+	overflow: hidden;
+	@include clearfix;
+	svg {
+		width: 59px;
+		height: 59px;
+		@media (min-width: $mobile) {
+			width: 61px;
+			height: 61px;
+		}
+	}
+	h1 {
+	  font-size: 40px;
+		margin-bottom: .15em;
+		float: left;
+		padding-top: 23px;
+		@media (min-width: $mobile) {
+		  font-size: 60px;
+			padding-top: 56px;
+		}
+	}
+	p {
+		font-family: $freight;
+		color: $midgrey;
+		font-size: 18px;
+		line-height: 1.4;
+		@media (max-width: 374px) {
+			font-size: 16px;
+		}
+	}
+	.logo, {
+		float: left;
+		margin: 16px 8px 0 15px;
+		@media (min-width: $mobile) {
+			margin: 44px 12px 0 40px;
+		}
+	}
+	.location {
+		@media (max-width: $mobile) {
+			margin-left: 6px;
+		}
+		@media (min-width: $mobile) {
+			display: block;
+		}
+	}
+	.date-wrap {
+		float: left;
+		@media (min-width: $mobile) {
+			float: right;
+			position: relative;
+			width: 25%;
+			padding-top: 56px;
+			&:after {
+				content: ' ';
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 999em;
+				height: 6px;
+				background: $black;
+			}
+		}
+	}
+}
+.sticky-nav svg {
+	width: 37px;
+	height: 37px;
+	@media (min-width: $mobile) {
+		width: 45px;
+		height: 45px;
+	}
+}
+
+/* Countdown */
+
+
+/* Layout */
+
+
+/* Timeline */
+
+
+
+/* Footer */
+
+
+
+
+
+
+/* Plugin styles */
