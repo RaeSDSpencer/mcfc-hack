@@ -1,0 +1,156 @@
+/* Header */
+.header-inner {
+	max-width: 400px;
+	@media (min-width: $tablet) {
+		margin: 0 auto;
+    max-width: 1200px;
+	}
+}
+#header {
+	width: 100%;
+	overflow: hidden;
+	@include clearfix;
+	svg {
+		width: 59px;
+		height: 59px;
+		@media (min-width: $tablet) {
+			width: 61px;
+			height: 61px;
+		}
+	}
+	h1 {
+	  font-size: 38px;
+		margin-bottom: .15em;
+		float: left;
+		padding-top: 25px;
+    line-height: .7em;
+		@media (min-width: $tablet) {
+		  font-size: 56px;
+			padding-top: 60px;
+    	margin-bottom: 1em;
+		}
+	}
+	p {
+		font-family: $gotham;
+		color: $midgrey;
+		font-size: 16px;
+		line-height: 1.4;
+    letter-spacing: .01em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  	text-rendering: optimizeLegibility;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+		@media (min-width: $tablet) {
+      margin-bottom: 1.3em;
+    }
+		@media (max-width: 374px) {
+			font-size: 14px;
+      letter-spacing: 0;
+		}
+	}
+	.logo, {
+		float: left;
+		margin: 16px 8px 0 15px;
+		@media (min-width: $tablet) {
+			margin: 44px 12px 0 40px;
+		}
+	}
+	.location {
+		margin-left: 6px;
+		@media (min-width: $tablet) {
+			display: block;
+    	margin-left: 0;
+		}
+	}
+	.date-wrap {
+		float: left;
+		@media (min-width: $tablet) {
+			float: right;
+			position: relative;
+			width: 31%;
+      box-sizing: content-box;
+      padding: 62px 6px 0 0;
+			&:after {
+				content: ' ';
+				display: block;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 999em;
+				height: 6px;
+				background: $black;
+			}
+		}
+		@media (min-width: $desktop) {
+      padding: 62px 20px 0 0;
+    }
+	}
+}
+.sticky-nav svg {
+	width: 37px;
+	height: 37px;
+	@media (min-width: $tablet) {
+		width: 45px;
+		height: 45px;
+	}
+}
+
+/* Stats */
+#clockdiv {
+	font-family: $gotham;
+	font-size: 90px;
+  width: 100%;
+  padding: 50px 15px 80px;
+  margin: 0 auto;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  @include clearfix;
+  @media (min-width: $tablet) {
+    font-size: 140px;
+    max-width: 1200px;
+    padding-top: 40px;
+    padding-bottom: 90px;
+  }
+  @media (min-width: $desktop) {
+    font-size: 160px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .big-no {
+    letter-spacing: -.03em;
+  }
+  .clock-part {
+	  float: left;
+    width: 50%;
+    @media (min-width: $smtablet) {
+      border-right: $lightgrey 1px solid;
+    	text-align: center;
+      &:nth-child(1) {
+        width: 18%;
+      }
+      &:nth-child(2) {
+        width: 26%;
+      }
+      &:nth-child(3) {
+        width: 25%;
+      }
+      &:nth-child(4) {
+        border-right: 0;
+        width: 31%;
+      }
+    }
+  }
+  .smalltext{
+  	font-size: 18px;
+    color: $midgrey;
+    text-transform: uppercase;
+    margin-bottom: .9em;
+    margin-top: -.6em;
+    @media (min-width: $tablet) {
+      font-size: 20px;
+      padding-top: 5px;
+    }
+  }
+}

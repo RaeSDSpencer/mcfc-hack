@@ -10,7 +10,7 @@ $iphone5:     320px;
 $smtablet:    600px;
 $tablet: 			768px;
 $desktop:			991px;
-$bigscreen:		992px;
+$bigscreen:		1025px;
 
 @mixin clearfix {
   &:after {
@@ -42,179 +42,91 @@ h1, h2, h3, h4 {
 }
 h1 {
   font-size: 72px;
-	letter-spacing: -.015em;
+	letter-spacing: -.005em;
 	margin-bottom: .3em;
 	line-height: .9;
+  @media (max-width: $iphone5) {
+    font-size: 60px;
+  }
+	@media (min-width: $tablet) {
+    font-size: 90px;
+  	letter-spacing: -.015em;
+  }
+}
+h2 {
+  font-size: 50px;
+	letter-spacing: -.005em;
+	margin-top: .8em;
+	margin-bottom: .3em;
+	@media (min-width: $tablet) {
+    font-size: 60px;
+  }
+}
+h3 {
+  font-size: 30px;
+	letter-spacing: -.005em;
+	margin-top: .8em;
+	margin-bottom: .3em;
+	@media (min-width: $tablet) {
+    font-size: 40px;
+  }
 }
 p {
   font-size: 16px;
-	margin-bottom: 1em;
+	margin-bottom: 1.2em;
 	font-weight: 300;
 	letter-spacing: .014em;
+	@media (min-width: $tablet) {
+    font-size: 20px;
+  }
 }
 .pre-head {
   font-size: 14px;
   margin-bottom: .3em;
 	font-weight: 600;
 	letter-spacing: -.007em;
+	@media (min-width: $tablet) {
+    font-size: 16px;
+    margin-bottom: .5em;
+  }
 }
-h1 + p {
+.line-wrap {
   font-size: 18px;
 	font-weight: 500;
   line-height: 1.4;
 	letter-spacing: -.01em;
-}
-
-/* Header */
-.header-inner {
-	max-width: 400px;
 	@media (min-width: $tablet) {
-		margin: 0 auto;
-    max-width: 1200px;
-	}
-}
-#header {
-	width: 100%;
-	overflow: hidden;
-	@include clearfix;
-	svg {
-		width: 59px;
-		height: 59px;
-		@media (min-width: $tablet) {
-			width: 61px;
-			height: 61px;
-		}
-	}
-	h1 {
-	  font-size: 38px;
-		margin-bottom: .15em;
-		float: left;
-		padding-top: 25px;
-    line-height: .7em;
-		@media (min-width: $tablet) {
-		  font-size: 56px;
-			padding-top: 60px;
-    	margin-bottom: 1em;
-		}
-	}
-	p {
-		font-family: $gotham;
-		color: $midgrey;
-		font-size: 16px;
-		line-height: 1.4;
-    letter-spacing: .01em;
-    text-transform: uppercase;
-    margin-bottom: 0;
-		@media (min-width: $tablet) {
-      margin-bottom: 1.3em;
-    }
-		@media (max-width: 374px) {
-			font-size: 14px;
-      letter-spacing: 0;
-		}
-	}
-	.logo, {
-		float: left;
-		margin: 16px 8px 0 15px;
-		@media (min-width: $tablet) {
-			margin: 44px 12px 0 40px;
-		}
-	}
-	.location {
-		margin-left: 6px;
-		@media (min-width: $tablet) {
-			display: block;
-    	margin-left: 0;
-		}
-	}
-	.date-wrap {
-		float: left;
-		@media (min-width: $tablet) {
-			float: right;
-			position: relative;
-			width: 31%;
-      box-sizing: content-box;
-      padding: 62px 6px 0 0;
-			&:after {
-				content: ' ';
-				display: block;
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				width: 999em;
-				height: 6px;
-				background: $black;
-			}
-		}
-		@media (min-width: $desktop) {
-      padding: 62px 20px 0 0;
-    }
-	}
-}
-.sticky-nav svg {
-	width: 37px;
-	height: 37px;
-	@media (min-width: $tablet) {
-		width: 45px;
-		height: 45px;
-	}
-}
-
-/* Stats */
-#clockdiv {
-	font-family: $gotham;
-	font-size: 90px;
-  width: 100%;
-  padding: 50px 15px 80px;
-  margin: 0 auto;
-  @include clearfix;
-  @media (min-width: $tablet) {
-    font-size: 140px;
-    max-width: 1200px;
-    padding-top: 40px;
-    padding-bottom: 90px;
+    font-size: 26px;
   }
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content p {
   @media (min-width: $desktop) {
-    font-size: 160px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  .big-no {
-    letter-spacing: -.03em;
-  }
-  .clock-part {
-	  float: left;
-    width: 50%;
-    @media (min-width: $smtablet) {
-      border-right: $lightgrey 1px solid;
-    	text-align: center;
-      &:nth-child(1) {
-        width: 18%;
-      }
-      &:nth-child(2) {
-        width: 26%;
-      }
-      &:nth-child(3) {
-        width: 25%;
-      }
-      &:nth-child(4) {
-        border-right: 0;
-        width: 31%;
-      }
-    }
-  }
-  .smalltext{
-  	font-size: 18px;
-    color: $midgrey;
-    text-transform: uppercase;
-    margin-bottom: .9em;
-    margin-top: -.6em;
-    @media (min-width: $tablet) {
-      font-size: 20px;
-      padding-top: 5px;
-    }
+    padding-left: 35%;
+    margin-left: -75px;
+    padding-right: 30px;
   }
 }
+.full-width h1,
+.full-width h2,
+.full-width h3,
+.full-width h4,
+.full-width p {
+  text-align: left;
+  @media (min-width: $desktop) {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+/* Hero area */
+@import "hero";
+
+
+
 
 /* About */
 .about-wrap {
@@ -230,11 +142,7 @@ h1 + p {
 	}
 }
 .button-wrap {
-  padding: 0 15px;
   height: 0;
-  @media (min-width: $tablet) {
-    padding: 0 50px;
-  }
 }
 button {
   background: $yellow;
@@ -275,15 +183,80 @@ button {
 .content {
   padding: 0 15px;
   @media (min-width: $tablet) {
-    padding: 0 50px;
+    padding: 0 75px;
+  }
+}
+.bottom-pad {
+  padding-bottom: 90px;
+  @media (min-width: $tablet) {
+    padding-bottom: 110px;
   }
 }
 .about-top {
   padding: 160px 15px 0;
+  background: linear-gradient(
+      rgba(199, 237, 255, 0.85) 70%,
+      rgba(199, 237, 255, 1)
+    ),
+    url("../img/hands-typing.jpg") no-repeat 83% top;
+  background-size: cover;
   @media (min-width: $tablet) {
-    padding: 280px 50px 0;
+    padding: 280px 75px 0;
+    background: linear-gradient(
+        rgba(199, 237, 255, 0.85) 70%,
+        rgba(199, 237, 255, 1)
+      ),
+      url("../img/hands-typing.jpg") no-repeat left top;
+    background-size: cover;
   }
 }
+.line-wrap {
+  @media (min-width: $desktop) {
+    position: relative;
+    overflow: hidden;
+  }
+  &:before {
+    @media (min-width: $desktop) {
+      content: '';
+      position: absolute;
+      right: 69%;
+      width: 999em;
+      height: 6px;
+      top: 8px;
+      background: $textcol;
+    }
+  }
+}
+.full-width {
+  @media (min-width: $tablet) {
+    @include clearfix
+  }
+  @media (min-width: $tablet) and (max-width: 880px) {
+    margin: 0 -50px;
+  }
+}
+.half-width {
+  text-align: center;
+  @media (min-width: $tablet) {
+    width: 47%;
+    float: left;
+    margin-right: 6%;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.premier svg {
+  width: 191px;
+  height: 245px;
+  margin-top: 20px;
+}
+.academy svg {
+  width: 271px;
+  height: 186px;
+  margin: 59px 0 20px;
+}
+
 
 /* Timeline */
 

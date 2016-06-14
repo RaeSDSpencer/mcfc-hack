@@ -105,28 +105,89 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 72px;
-  letter-spacing: -.015em;
+  letter-spacing: -.005em;
   margin-bottom: .3em;
   line-height: .9; }
+  @media (max-width: 320px) {
+    h1 {
+      font-size: 60px; } }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 90px;
+      letter-spacing: -.015em; } }
+
+h2 {
+  font-size: 50px;
+  letter-spacing: -.005em;
+  margin-top: .8em;
+  margin-bottom: .3em; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 60px; } }
+
+h3 {
+  font-size: 30px;
+  letter-spacing: -.005em;
+  margin-top: .8em;
+  margin-bottom: .3em; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 40px; } }
 
 p {
   font-size: 16px;
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
   font-weight: 300;
   letter-spacing: .014em; }
+  @media (min-width: 768px) {
+    p {
+      font-size: 20px; } }
 
 .pre-head {
   font-size: 14px;
   margin-bottom: .3em;
   font-weight: 600;
   letter-spacing: -.007em; }
+  @media (min-width: 768px) {
+    .pre-head {
+      font-size: 16px;
+      margin-bottom: .5em; } }
 
-h1 + p {
+.line-wrap {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.4;
   letter-spacing: -.01em; }
+  @media (min-width: 768px) {
+    .line-wrap {
+      font-size: 26px; } }
 
+@media (min-width: 991px) {
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4,
+  .content p {
+    padding-left: 35%;
+    margin-left: -75px;
+    padding-right: 30px; } }
+
+.full-width h1,
+.full-width h2,
+.full-width h3,
+.full-width h4,
+.full-width p {
+  text-align: left; }
+  @media (min-width: 991px) {
+    .full-width h1,
+    .full-width h2,
+    .full-width h3,
+    .full-width h4,
+    .full-width p {
+      padding-left: 0;
+      margin-left: 0; } }
+
+/* Hero area */
 /* Header */
 .header-inner {
   max-width: 400px; }
@@ -167,7 +228,10 @@ h1 + p {
     line-height: 1.4;
     letter-spacing: .01em;
     text-transform: uppercase;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
     @media (min-width: 768px) {
       #header p {
         margin-bottom: 1.3em; } }
@@ -223,7 +287,10 @@ h1 + p {
   font-size: 90px;
   width: 100%;
   padding: 50px 15px 80px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
   #clockdiv:after {
     content: "";
     display: table;
@@ -281,11 +348,7 @@ h1 + p {
       max-width: 1200px; } }
 
 .button-wrap {
-  padding: 0 15px;
   height: 0; }
-  @media (min-width: 768px) {
-    .button-wrap {
-      padding: 0 50px; } }
 
 button {
   background: #FFC758;
@@ -328,13 +391,68 @@ button {
   padding: 0 15px; }
   @media (min-width: 768px) {
     .content {
-      padding: 0 50px; } }
+      padding: 0 75px; } }
+
+.bottom-pad {
+  padding-bottom: 90px; }
+  @media (min-width: 768px) {
+    .bottom-pad {
+      padding-bottom: 110px; } }
 
 .about-top {
-  padding: 160px 15px 0; }
+  padding: 160px 15px 0;
+  background: -webkit-linear-gradient(rgba(199, 237, 255, 0.85) 70%, #c7edff), url("../img/hands-typing.jpg") no-repeat 83% top;
+  background: linear-gradient(rgba(199, 237, 255, 0.85) 70%, #c7edff), url("../img/hands-typing.jpg") no-repeat 83% top;
+  background-size: cover; }
   @media (min-width: 768px) {
     .about-top {
-      padding: 280px 50px 0; } }
+      padding: 280px 75px 0;
+      background: -webkit-linear-gradient(rgba(199, 237, 255, 0.85) 70%, #c7edff), url("../img/hands-typing.jpg") no-repeat left top;
+      background: linear-gradient(rgba(199, 237, 255, 0.85) 70%, #c7edff), url("../img/hands-typing.jpg") no-repeat left top;
+      background-size: cover; } }
+
+@media (min-width: 991px) {
+  .line-wrap {
+    position: relative;
+    overflow: hidden; } }
+@media (min-width: 991px) {
+  .line-wrap:before {
+    content: '';
+    position: absolute;
+    right: 69%;
+    width: 999em;
+    height: 6px;
+    top: 8px;
+    background: #2f3133; } }
+
+@media (min-width: 768px) {
+  .full-width:after {
+    content: "";
+    display: table;
+    clear: both; } }
+@media (min-width: 768px) and (max-width: 880px) {
+  .full-width {
+    margin: 0 -50px; } }
+
+.half-width {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .half-width {
+      width: 47%;
+      float: left;
+      margin-right: 6%; }
+      .half-width:last-child {
+        margin-right: 0; } }
+
+.premier svg {
+  width: 191px;
+  height: 245px;
+  margin-top: 20px; }
+
+.academy svg {
+  width: 271px;
+  height: 186px;
+  margin: 59px 0 20px; }
 
 /* Timeline */
 /* Footer */
