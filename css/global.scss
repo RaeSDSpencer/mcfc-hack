@@ -56,7 +56,7 @@ h1 {
 h2 {
   font-size: 50px;
 	letter-spacing: -.005em;
-	margin-top: .8em;
+	padding-top: .8em;
 	margin-bottom: .3em;
 	@media (min-width: $tablet) {
     font-size: 60px;
@@ -80,15 +80,26 @@ p {
     font-size: 20px;
   }
 }
-.pre-head {
+.schedule p {
+  @media (min-width: $tablet) {
+    font-size: 16px !important;
+    font-weight: 400;
+  	margin-bottom: .8em;
+  }
+}
+p.pre-head {
   font-size: 14px;
   margin-bottom: .3em;
-	font-weight: 600;
+	font-weight: 500;
 	letter-spacing: -.007em;
 	@media (min-width: $tablet) {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: .5em;
   }
+}
+.schedule .pre-head {
+  margin-bottom: 0;
+  color: $midgrey;
 }
 .line-wrap {
   font-size: 18px;
@@ -110,6 +121,21 @@ p {
     padding-right: 30px;
   }
 }
+.data p {
+  @media (min-width: 1420px) {
+    padding-right: 12%;
+  }
+}
+.extra-pad h1,
+.extra-pad h2,
+.extra-pad h3,
+.extra-pad h4,
+.extra-pad p {
+  @media (min-width: $desktop) {
+    margin-left: -125px;
+    padding-left: 38%;
+  }
+}
 .full-width h1,
 .full-width h2,
 .full-width h3,
@@ -119,6 +145,31 @@ p {
   @media (min-width: $desktop) {
     padding-left: 0;
     margin-left: 0;
+  }
+}
+.schedule h3 {
+  margin: 0;
+  color: $yellow;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 19.2%;
+    width: 16px;
+    height: 16px;
+    top: 85px;
+    border-radius: 30px;
+    background: $yellow;
+    z-index: 10;
+  }
+}
+.schedule-second h3 {
+  &:after {
+    top: 45px;
+  }
+}
+.schedule-last h3 {
+  &:after {
+    top: 22px;
   }
 }
 
@@ -186,6 +237,11 @@ button {
     padding: 0 75px;
   }
 }
+.extra-pad {
+  @media (min-width: $desktop) {
+    padding: 0 100px 0 125px;
+  }
+}
 .bottom-pad {
   padding-bottom: 90px;
   @media (min-width: $tablet) {
@@ -227,6 +283,11 @@ button {
     }
   }
 }
+.extra-pad .line-wrap:before {
+  @media (min-width: $desktop) {
+    right: 68.1%;
+  }
+}
 .full-width {
   @media (min-width: $tablet) {
     @include clearfix
@@ -256,11 +317,66 @@ button {
   height: 186px;
   margin: 59px 0 20px;
 }
+.data {
+  padding-top: 50px;
+}
 
-
-/* Timeline */
-
-
+/* Schedule */
+.schedule {
+  background: $darkgrey;
+  color: #fff;
+  padding-bottom: 60px;
+}
+.schedule-outer {
+  padding: 0 15px;
+  @media (min-width: $tablet) {
+    padding: 0 75px;
+  }
+  @media (min-width: $desktop) {
+    padding: 0 100px;
+  }
+  &:nth-child(3) {
+    background: $black;
+  }
+}
+.schedule-inner {
+  padding: 30px 0;
+  position: relative;
+  @media (min-width: $tablet) {
+    padding: 40px 0;
+  }
+  @media (min-width: $desktop) {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-left: 26%;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 20%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: $midgrey;
+      z-index: 1;
+    }
+  }
+}
+.schedule-first:after {
+  display: none;
+}
+.schedule-first {
+  padding-bottom: 0;
+}
+.schedule-second,
+.schedule-last {
+  padding-top: 0;
+}
+.schedule-second:after {
+  top: 45px;
+}
+.schedule-last:after {
+  height: 22px;
+}
 
 /* Footer */
 footer {
