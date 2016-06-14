@@ -90,7 +90,7 @@ body {
   background: #fff;
   text-align: left;
   color: #2f3133;
-  line-height: 1.3;
+  line-height: 1.5;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -104,55 +104,32 @@ h1, h2, h3, h4 {
   text-transform: uppercase; }
 
 h1 {
-  font-size: 70px;
-  letter-spacing: -.015em;
-  margin-bottom: 1em;
-  line-height: .7; }
+  font-size: 72px;
+  letter-spacing: -.025em;
+  margin-bottom: .3em;
+  line-height: .9; }
 
 p {
   font-size: 16px;
   margin-bottom: 1em;
+  font-weight: 200; }
+
+.pre-head {
+  font-size: 14px;
+  margin-bottom: .3em;
+  font-weight: 600;
   letter-spacing: -.007em; }
 
-/* Button styles */
-button {
-  background: #FFC758;
-  border: 0;
-  text-transform: uppercase;
-  font-size: 15px;
-  letter-spacing: .15em;
-  color: #2f3133;
-  padding: 15px 15px 15px 30px;
-  width: 33%;
-  text-align: left;
-  position: relative;
-  cursor: pointer;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  float: right;
-  margin-right: 15px;
-  font-weight: 400;
-  -webkit-transition: background .2s, padding .3s;
-  transition: background .2s, padding .3s; }
-  @media (min-width: 767px) {
-    button {
-      margin-right: 50px; } }
-  button svg {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%); }
-  button:hover {
-    background: #2f3133;
-    color: #FFC758;
-    font-weight: 500;
-    padding-left: 36px; }
+h1 + p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: -.01em; }
 
 /* Header */
 .header-inner {
   max-width: 400px; }
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     .header-inner {
       margin: 0 auto;
       max-width: 1200px; } }
@@ -167,7 +144,7 @@ button {
   #header svg {
     width: 59px;
     height: 59px; }
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
       #header svg {
         width: 61px;
         height: 61px; } }
@@ -175,11 +152,13 @@ button {
     font-size: 38px;
     margin-bottom: .15em;
     float: left;
-    padding-top: 26px; }
-    @media (min-width: 767px) {
+    padding-top: 25px;
+    line-height: .7em; }
+    @media (min-width: 768px) {
       #header h1 {
         font-size: 56px;
-        padding-top: 60px; } }
+        padding-top: 60px;
+        margin-bottom: 1em; } }
   #header p {
     font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", Impact;
     color: #828385;
@@ -188,7 +167,7 @@ button {
     letter-spacing: .01em;
     text-transform: uppercase;
     margin-bottom: 0; }
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
       #header p {
         margin-bottom: 1.3em; } }
     @media (max-width: 374px) {
@@ -198,22 +177,22 @@ button {
   #header .logo {
     float: left;
     margin: 16px 8px 0 15px; }
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
       #header .logo {
         margin: 44px 12px 0 40px; } }
   #header .location {
     margin-left: 6px; }
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
       #header .location {
         display: block;
         margin-left: 0; } }
   #header .date-wrap {
     float: left; }
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
       #header .date-wrap {
         float: right;
         position: relative;
-        width: 25%;
+        width: 31%;
         box-sizing: content-box;
         padding: 62px 6px 0 0; }
         #header .date-wrap:after {
@@ -227,58 +206,135 @@ button {
           background: #2a2c2e; } }
     @media (min-width: 991px) {
       #header .date-wrap {
-        padding: 62px 26px 0 0; } }
+        padding: 62px 20px 0 0; } }
 
 .sticky-nav svg {
   width: 37px;
   height: 37px; }
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     .sticky-nav svg {
       width: 45px;
       height: 45px; } }
 
-/* Countdown */
+/* Stats */
 #clockdiv {
   font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", Impact;
-  text-align: center;
-  font-size: 70px;
+  font-size: 90px;
   width: 100%;
-  max-width: 1200px;
-  padding: 50px 10px 100px 10px;
+  padding: 50px 15px 80px;
   margin: 0 auto; }
   #clockdiv:after {
     content: "";
     display: table;
     clear: both; }
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     #clockdiv {
-      font-size: 180px;
+      font-size: 140px;
+      max-width: 1200px;
       padding-top: 40px;
-      padding-bottom: 70px; } }
+      padding-bottom: 90px; } }
   @media (min-width: 991px) {
     #clockdiv {
+      font-size: 160px;
       padding-left: 50px;
       padding-right: 50px; } }
-  @media (max-width: 767px) {
-    #clockdiv {
-      max-width: 500px; } }
+  #clockdiv .big-no {
+    letter-spacing: -.03em; }
   #clockdiv .clock-part {
-    width: 25%;
     float: left;
-    border-right: #ecedf0 1px solid; }
-    #clockdiv .clock-part:nth-child(4) {
-      border-right: 0; }
+    width: 50%; }
+    @media (min-width: 600px) {
+      #clockdiv .clock-part {
+        border-right: #ecedf0 1px solid;
+        text-align: center; }
+        #clockdiv .clock-part:nth-child(1) {
+          width: 18%; }
+        #clockdiv .clock-part:nth-child(2) {
+          width: 26%; }
+        #clockdiv .clock-part:nth-child(3) {
+          width: 25%; }
+        #clockdiv .clock-part:nth-child(4) {
+          border-right: 0;
+          width: 31%; } }
   #clockdiv .smalltext {
-    padding-top: 5px;
     font-size: 18px;
     color: #828385;
     text-transform: uppercase;
-    margin-bottom: .7em; }
-    @media (min-width: 767px) {
+    margin-bottom: .9em;
+    margin-top: -.6em; }
+    @media (min-width: 768px) {
       #clockdiv .smalltext {
-        font-size: 20px; } }
+        font-size: 20px;
+        padding-top: 5px; } }
 
 /* About */
+@media (min-width: 768px) {
+  .about-wrap {
+    padding: 0 25px; } }
+
+.about {
+  background: #C7EDFF; }
+  @media (min-width: 768px) {
+    .about {
+      margin: 0 auto;
+      max-width: 1200px; } }
+
+.button-wrap {
+  padding: 0 15px;
+  height: 0; }
+  @media (min-width: 768px) {
+    .button-wrap {
+      padding: 0 50px; } }
+
+button {
+  background: #FFC758;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: .15em;
+  color: #2f3133;
+  padding: 15px 15px 15px 30px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  font-weight: 400;
+  -webkit-transition: background .2s, padding .3s;
+  transition: background .2s, padding .3s;
+  width: 100%; }
+  @media (min-width: 768px) {
+    button {
+      margin-right: -25px;
+      float: right;
+      width: 45%; } }
+  @media (min-width: 991px) {
+    button {
+      width: 40%; } }
+  button svg {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
+  button:hover {
+    background: #2f3133;
+    color: #FFC758;
+    font-weight: 500;
+    padding-left: 36px; }
+
+.content {
+  padding: 0 15px; }
+  @media (min-width: 768px) {
+    .content {
+      padding: 0 50px; } }
+
+.about-top {
+  padding: 160px 15px 0; }
+  @media (min-width: 768px) {
+    .about-top {
+      padding: 280px 50px 0; } }
+
 /* Timeline */
 /* Footer */
 footer {
@@ -286,7 +342,7 @@ footer {
   margin: 0 auto;
   text-align: center;
   padding: 0 15px; }
-  @media (min-width: 767px) {
+  @media (min-width: 768px) {
     footer {
       text-align: left;
       padding: 0 50px; } }
