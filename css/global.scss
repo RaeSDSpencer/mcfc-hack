@@ -29,9 +29,6 @@ body {
 	color: $textcol;
 	line-height: 1.5;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	border-top: 4px $yellow solid;
 }
 /* Type */
@@ -39,10 +36,13 @@ h1, h2, h3, h4 {
 	font-family: $gotham;
 	font-weight: 600;
 	text-transform: uppercase;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 h1 {
   font-size: 72px;
-	letter-spacing: -.025em;
+	letter-spacing: -.015em;
 	margin-bottom: .3em;
 	line-height: .9;
 }
@@ -50,7 +50,7 @@ p {
   font-size: 16px;
 	margin-bottom: 1em;
 	font-weight: 300;
-	letter-spacing: .007em;
+	letter-spacing: .014em;
 }
 .pre-head {
   font-size: 14px;
