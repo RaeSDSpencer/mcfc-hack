@@ -112,7 +112,8 @@ h1 {
 p {
   font-size: 16px;
   margin-bottom: 1em;
-  font-weight: 200; }
+  font-weight: 300;
+  letter-spacing: .007em; }
 
 .pre-head {
   font-size: 14px;
@@ -321,7 +322,7 @@ button {
     background: #2f3133;
     color: #FFC758;
     font-weight: 500;
-    padding-left: 36px; }
+    padding-left: 45px; }
 
 .content {
   padding: 0 15px; }
