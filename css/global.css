@@ -125,6 +125,10 @@ h2 {
     h2 {
       font-size: 60px; } }
 
+.where h2 {
+  padding-top: .6em;
+  margin-bottom: 0; }
+
 h3 {
   font-size: 30px;
   letter-spacing: -.005em;
@@ -152,7 +156,10 @@ p {
     .schedule p {
       padding-left: 35%;
       margin-left: -75px;
-      padding-right: 120px; } }
+      padding-right: 120px;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; } }
 
 p.pre-head {
   font-size: 14px;
@@ -163,6 +170,18 @@ p.pre-head {
     p.pre-head {
       font-size: 18px;
       margin-bottom: .5em; } }
+
+.where p {
+  color: #828385; }
+  @media (min-width: 991px) {
+    .where p {
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; } }
+
+.where strong {
+  font-weight: 500;
+  color: #2f3133; }
 
 .schedule .pre-head {
   margin-bottom: 0;
@@ -243,10 +262,10 @@ p.pre-head {
         top: 85px; } }
     @media (min-width: 991px) {
       .schedule h3:after {
-        left: 320px; } }
+        left: 321px; } }
     @media (min-width: 991px) and (max-width: 1150px) {
       .schedule h3:after {
-        left: 270px; } }
+        left: 271px; } }
 
 .schedule-second h3:after {
   top: 35px; }
@@ -460,6 +479,13 @@ button {
     font-weight: 500;
     padding-left: 45px; }
 
+.but-white {
+  background: #fff;
+  border: 1px solid #2f3133;
+  width: 100%;
+  float: none;
+  margin-top: 2em; }
+
 .content {
   padding: 0 15px; }
   @media (min-width: 768px) {
@@ -602,6 +628,38 @@ button {
 
 .schedule-last:after {
   height: 22px; }
+
+/* Where */
+.where {
+  margin: 75px 15px 0;
+  background: url("../img/map.jpg") no-repeat 70% top;
+  background-size: auto 450px;
+  padding-top: 371px; }
+  @media (min-width: 768px) {
+    .where {
+      margin: 85px 25px 0;
+      background-size: auto 516px;
+      background-position: right;
+      padding-top: 140px; } }
+  @media (min-width: 1200px) {
+    .where {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto; } }
+
+.where-text {
+  background: #fff;
+  width: 300px;
+  padding-right: 15px; }
+
+@media (min-width: 768px) {
+  .where-text-outer {
+    padding: 0 30px 0 50px;
+    width: 400px;
+    background: #fff; } }
+@media (min-width: 991px) {
+  .where-text-outer {
+    padding: 0 30px 0 85px; } }
 
 /* Footer */
 footer {

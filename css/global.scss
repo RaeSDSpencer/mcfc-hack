@@ -10,7 +10,7 @@ $iphone5:     320px;
 $smtablet:    600px;
 $tablet: 			768px;
 $desktop:			991px;
-$bigscreen:		1025px;
+$bigscreen:		1200px;
 
 @mixin clearfix {
   &:after {
@@ -62,6 +62,10 @@ h2 {
     font-size: 60px;
   }
 }
+.where h2 {
+  padding-top: .6em;
+	margin-bottom: 0;
+}
 h3 {
   font-size: 30px;
 	letter-spacing: -.005em;
@@ -89,6 +93,9 @@ p {
       padding-left: 35%;
       margin-left: -75px;
       padding-right: 120px;
+      text-rendering: optimizeLegibility;
+    	-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
     }
   }
 }
@@ -101,6 +108,18 @@ p.pre-head {
     font-size: 18px;
     margin-bottom: .5em;
   }
+}
+.where p {
+  color: $midgrey;
+	@media (min-width: $desktop) {
+  	text-rendering: optimizeLegibility;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  }
+}
+.where strong {
+  font-weight: 500;
+  color: $textcol;
 }
 .schedule .pre-head {
   margin-bottom: 0;
@@ -180,10 +199,10 @@ p.pre-head {
       top: 85px;
     }
     @media (min-width: $desktop) {
-      left: 320px;
+      left: 321px;
     }
     @media (min-width: $desktop) and (max-width: 1150px) {
-      left: 270px;
+      left: 271px;
     }
   }
 }
@@ -261,6 +280,13 @@ button {
     font-weight: 500;
     padding-left: 45px;
   }
+}
+.but-white {
+  background: #fff;
+  border: 1px solid $textcol;
+  width: 100%;
+  float: none;
+  margin-top: 2em;
 }
 .content {
   padding: 0 15px;
@@ -420,6 +446,44 @@ button {
   height: 22px;
 }
 
+/* Where */
+.where {
+  margin: 75px 15px 0;
+  background: url("../img/map.jpg") no-repeat 70% top;
+  background-size: auto 450px;
+  padding-top: 371px;
+  @media (min-width: $tablet) {
+    margin: 85px 25px 0;
+    background-size: auto 516px;
+    background-position: right;
+    padding-top: 140px;
+  }
+  @media (min-width: $bigscreen) {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.where-text {
+  background: #fff;
+  width: 300px;
+  padding-right: 15px;
+  @media (min-width: $tablet) {
+  }
+  @media (min-width: $desktop) {
+  }
+}
+.where-text-outer {
+  @media (min-width: $tablet) {
+    padding: 0 30px 0 50px;
+    width: 400px;
+    background: #fff;
+  }
+  @media (min-width: $desktop) {
+    padding: 0 30px 0 85px;
+  }
+}
+
 /* Footer */
 footer {
   max-width: 1200px;
@@ -431,9 +495,6 @@ footer {
     padding: 0 50px;
   }
 }
-
-
-
 
 /* Plugin styles */
 
