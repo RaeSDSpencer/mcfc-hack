@@ -148,6 +148,11 @@ p {
     font-size: 16px !important;
     font-weight: 400;
     margin-bottom: .8em; } }
+  @media (min-width: 768px) and (min-width: 991px) {
+    .schedule p {
+      padding-left: 35%;
+      margin-left: -75px;
+      padding-right: 120px; } }
 
 p.pre-head {
   font-size: 14px;
@@ -210,25 +215,50 @@ p.pre-head {
       padding-left: 0;
       margin-left: 0; } }
 
+@media (min-width: 991px) {
+  .schedule h2 {
+    padding-left: 35%;
+    margin-left: -75px; } }
+
 .schedule h3 {
   margin: 0;
   color: #FFC758; }
+  @media (min-width: 991px) {
+    .schedule h3 {
+      padding-left: 35%;
+      margin-left: -75px; } }
   .schedule h3:after {
     content: '';
     position: absolute;
-    left: 19.2%;
     width: 16px;
     height: 16px;
-    top: 85px;
     border-radius: 30px;
     background: #FFC758;
-    z-index: 10; }
+    top: 65px;
+    z-index: 10;
+    left: 0; }
+    @media (min-width: 768px) {
+      .schedule h3:after {
+        left: -44px;
+        top: 85px; } }
+    @media (min-width: 991px) {
+      .schedule h3:after {
+        left: 320px; } }
+    @media (min-width: 991px) and (max-width: 1150px) {
+      .schedule h3:after {
+        left: 270px; } }
 
 .schedule-second h3:after {
-  top: 45px; }
+  top: 35px; }
+  @media (min-width: 768px) {
+    .schedule-second h3:after {
+      top: 45px; } }
 
 .schedule-last h3:after {
-  top: 22px; }
+  top: 15px; }
+  @media (min-width: 768px) {
+    .schedule-last h3:after {
+      top: 22px; } }
 
 /* Hero area */
 /* Header */
@@ -329,7 +359,7 @@ p.pre-head {
   font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", Impact;
   font-size: 90px;
   width: 100%;
-  padding: 50px 15px 80px;
+  padding: 30px 15px 60px;
   margin: 0 auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -521,30 +551,41 @@ button {
       padding: 0 75px; } }
   @media (min-width: 991px) {
     .schedule-outer {
-      padding: 0 100px; } }
+      padding: 0; } }
   .schedule-outer:nth-child(3) {
     background: #2a2c2e; }
 
 .schedule-inner {
   padding: 30px 0;
+  padding-left: 30px;
   position: relative; }
   @media (min-width: 768px) {
     .schedule-inner {
       padding: 40px 0; } }
   @media (min-width: 991px) {
     .schedule-inner {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: 0 auto;
-      padding-left: 26%; }
+      padding-left: 75px;
+      padding-right: 75px; } }
+  .schedule-inner:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #828385;
+    z-index: 1;
+    left: 7px; }
+    @media (min-width: 768px) {
       .schedule-inner:after {
-        content: '';
-        position: absolute;
-        left: 20%;
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        background: #828385;
-        z-index: 1; } }
+        left: -37px; } }
+    @media (min-width: 991px) {
+      .schedule-inner:after {
+        left: 327px; } }
+    @media (min-width: 991px) and (max-width: 1150px) {
+      .schedule-inner:after {
+        left: 277px; } }
 
 .schedule-first:after {
   display: none; }
