@@ -581,24 +581,30 @@ button {
 }
 .question {
   cursor: pointer;
+  position: relative;
   @include clearfix
 }
 .question svg {
   width: 12px;
   height: 7px;
-  float: left;
-  margin-right: 15px;
-  margin-top: 10px;
-  @media (min-width: $desktop) {
-    margin-right: 20px;
+  position: absolute;
+  left: 0;
+  top: 9px;
+  @media (min-width: $tablet) {
+    top: 14px;
   }
 }
 .question:hover {
   color: $midgrey;
 }
 .question p {
-  float: left;
-  display: block;
+  margin-bottom: .8em;
+}
+.faq p {
+  padding-left: 25px;
+}
+.ans p:last-child {
+  padding-bottom: 15px;
 }
 
 /* Footer */
