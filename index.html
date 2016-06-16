@@ -172,10 +172,10 @@
  Manchester<br/>
  M11 3FF</p>
     </div>
-    <button type="button" name="button" class="button but-white">
+    <a class="button but-white" href="xxxx">
       <span class="button-text">Get directions</span>
       <svg xmlns="http://www.w3.org/2000/svg" width="10" height="17"><path fill="#828385" fill-rule="evenodd" d="M.778.707L1.485 0 9.97 8.485l-.707.707L.778.707zm7.778 7.778l.707.707-7.778 7.78-.707-.71 7.778-7.777z"/></svg>
-    </button>
+    </a>
   </div>
 </section><!-- .where -->
 
@@ -211,7 +211,7 @@
         <div class="question">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="-631 396 17 10"><style>.st0{fill:#828385;}</style><path d="M-614 397.5l-.7-.7-7.8 7.8-7.8-7.8-.7.7 8.5 8.5z" class="st0"/></svg>
           <p>Who should attend?</p>
-</div>
+        </div>
         <div class="ans">
           <p>Highly skilled people who love solving problems and finding opportunities, they might also love data, football and technology, not necessarily in that order!</p>
           <p>The key qualities we are looking for are relevant skills, curiosity, enthusiasm and drive. Beyond this, due to the limited number of places, if over subscribed we will prioritise who can flex their muscles around data, development or design, or who can show us something interesting that they’ve discovered or made.</p>
@@ -291,7 +291,7 @@
           <p>Is there a Hackathon code of conduct?</p>
         </div>
         <div class="ans">
-          <p>Yes, see it <a href="#">here</a>.</p>
+          <p>Yes, see it <a href="XXXXXXXXXXXXXXXXXXXX">here</a>.</p>
         </div>
       </div>
 
@@ -330,6 +330,25 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="js/main.js"></script>
-
+<script>
+// Counter for stats
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 2500,
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+// FAQs
+$(document).ready(function($) {
+  $('.ans').hide();
+  $('.qanda').find('.question').click(function(){
+    $(this).toggleClass("ansopen").next().slideToggle(200);
+    $('ans').not($(this).next()).slideUp(150);
+  });
+});
+</script>
 </body></html>

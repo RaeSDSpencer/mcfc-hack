@@ -99,6 +99,9 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   border-top: 4px #FFC758 solid; }
 
+a {
+  transition: color .2s; }
+
 /* Type */
 h1, h2, h3, h4 {
   font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", Impact;
@@ -465,7 +468,8 @@ p.pre-head {
   font-weight: 400;
   transition: background .2s, padding .3s;
   width: 100%;
-  text-decoration: none; }
+  text-decoration: none;
+  display: block; }
   .button svg {
     position: absolute;
     top: 50%;
@@ -768,7 +772,8 @@ p.pre-head {
 
 .question {
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  transition: color .2s; }
   .question:after {
     content: "";
     display: table;
@@ -783,6 +788,12 @@ p.pre-head {
   @media (min-width: 768px) {
     .question svg {
       top: 14px; } }
+
+.ansopen svg {
+  transform: rotate(180deg); }
+
+.question path {
+  fill: #2f3133; }
 
 .question:hover {
   color: #828385; }
