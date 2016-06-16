@@ -1,4 +1,3 @@
-
 // Counter for main numbers
 $('.count').each(function () {
     $(this).prop('Counter',0).animate({
@@ -16,8 +15,8 @@ $(document).ready(function($) {
   $('.ans').hide();
   $('.qanda').find('.question').click(function(){
     //Expand or collapse this panel
-    $(this).next().slideToggle(300);
+    $(this).next().slideToggle(200);
     //Hide the other panels
-    $('ans').not($(this).next()).slideUp(200);
+    $('ans').not($(this).next()).slideUp(150);
   });
 });
