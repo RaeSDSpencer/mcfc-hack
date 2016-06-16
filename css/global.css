@@ -450,7 +450,7 @@ p.pre-head {
 .button-wrap {
   height: 0; }
 
-button {
+.button {
   background: #FFC758;
   border: 0;
   text-transform: uppercase;
@@ -464,12 +464,12 @@ button {
   font-weight: 400;
   transition: background .2s, padding .3s;
   width: 100%; }
-  button svg {
+  .button svg {
     position: absolute;
     top: 50%;
     right: 15px;
     transform: translate(0, -50%); }
-  button:hover {
+  .button:hover {
     background: #2f3133;
     color: #FFC758;
     font-weight: 500;
@@ -508,6 +508,14 @@ button {
       margin-top: 50px; } }
   .but-big:hover {
     padding-left: 30px; }
+
+.footer-inner .button {
+  width: 230px;
+  display: inline-block; }
+  @media (min-width: 768px) {
+    .footer-inner .button {
+      margin-bottom: 120px;
+      margin-top: 30px; } }
 
 .content {
   padding: 0 15px; }
@@ -757,6 +765,9 @@ button {
   .faq-text {
     margin-left: 0; } }
 
+.faq {
+  padding-bottom: 100px; }
+
 @media (min-width: 991px) {
   .faq-text {
     margin-left: -75px; } }
@@ -795,16 +806,32 @@ button {
   .qanda {
     padding-bottom: 15px; } }
 
+/* partners */
 /* Footer */
 footer {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 0 15px; }
+  background: #2a2c2e;
+  padding-bottom: 40px;
+  border-top: 20px solid #FFC758;
+  text-align: center; }
   @media (min-width: 768px) {
     footer {
-      text-align: left;
-      padding: 0 50px; } }
+      border-top: 50px solid #FFC758;
+      padding-bottom: 60px; } }
+
+.footer-inner {
+  padding: 120px 15px 0; }
+  @media (min-width: 991px) {
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 75px; } }
+
+.footer-inner h2 {
+  color: #FFC758;
+  margin-bottom: 0; }
+
+.footer-inner h2 + p {
+  color: #fff; }
 
 /* Plugin styles */
 /* Fonts */
