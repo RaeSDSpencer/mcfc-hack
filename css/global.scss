@@ -384,6 +384,9 @@ button {
       margin-right: 0;
     }
   }
+  path {
+    fill: $textcol;
+  }
 }
 .premier svg {
   width: 191px;
@@ -605,6 +608,11 @@ button {
 }
 .ans p:last-child {
   padding-bottom: 15px;
+}
+.qanda {
+  @media (min-width: $tablet) {
+    padding-bottom: 8px;
+  }
 }
 
 /* Footer */
