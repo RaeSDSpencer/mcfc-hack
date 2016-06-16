@@ -188,6 +188,7 @@ p.pre-head {
   color: #828385; }
 
 .who p:first-child,
+.question,
 .line-wrap {
   font-size: 18px;
   font-weight: 500;
@@ -195,6 +196,7 @@ p.pre-head {
   letter-spacing: -.01em; }
   @media (min-width: 768px) {
     .who p:first-child,
+    .question,
     .line-wrap {
       font-size: 26px; } }
 
@@ -681,32 +683,23 @@ button {
   .where-text-outer {
     padding: 0 30px 0 85px; } }
 
-/* Who */
-.who {
+/* Who & FAQ */
+.who,
+.faq {
   padding: 110px 15px 0; }
   @media (min-width: 768px) {
-    .who {
+    .who,
+    .faq {
       padding: 100px 30px 0; } }
   @media (min-width: 991px) {
-    .who:after {
+    .who:after,
+    .faq:after {
       content: "";
       display: table;
       clear: both; } }
 
 .who-text-outer {
   position: relative; }
-  @media (min-width: 768px) {
-    .who-text-outer {
-      padding-left: 50px;
-      padding-right: 50px; } }
-  @media (min-width: 991px) {
-    .who-text-outer {
-      max-width: 1200px;
-      margin: 0 auto; } }
-  @media (min-width: 1200px) {
-    .who-text-outer {
-      padding-left: 75px;
-      padding-right: 75px; } }
   @media (min-width: 768px) {
     .who-text-outer:before {
       z-index: -1;
@@ -725,23 +718,57 @@ button {
     .who-text-outer:before {
       width: 600px; } }
 
-.who h1 {
+@media (min-width: 768px) {
+  .who-text-outer,
+  .faq-text-outer {
+    padding-left: 50px;
+    padding-right: 50px; } }
+@media (min-width: 991px) {
+  .who-text-outer,
+  .faq-text-outer {
+    max-width: 1200px;
+    margin: 0 auto; } }
+@media (min-width: 1200px) {
+  .who-text-outer,
+  .faq-text-outer {
+    padding-left: 75px;
+    padding-right: 75px; } }
+
+.who h1,
+.faq h1 {
   padding-top: 50px; }
   @media (min-width: 991px) {
-    .who h1 {
+    .who h1,
+    .faq h1 {
       width: 30%;
       float: left;
       margin-right: 5%; } }
 
 @media (min-width: 991px) {
-  .who-text {
+  .who-text,
+  .faq-text {
     margin-left: -75px;
     float: left;
     width: 65%;
     padding-top: 95px; } }
 @media (min-width: 991px) and (max-width: 1100px) {
-  .who-text {
+  .who-text,
+  .faq-text {
     margin-left: 0; } }
+
+@media (min-width: 991px) {
+  .faq-text {
+    margin-left: -75px; } }
+
+.faq svg {
+  width: 12px;
+  height: 7px;
+  float: left;
+  margin-right: 15px;
+  margin-top: 10px; }
+  @media (min-width: 991px) {
+    .faq svg {
+      margin-right: 20px; } }
 
 /* Footer */
 footer {
