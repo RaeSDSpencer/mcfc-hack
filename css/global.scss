@@ -261,6 +261,7 @@ p.pre-head {
   font-weight: 400;
   transition: background .2s, padding .3s;
   width: 100%;
+  text-decoration: none;
   svg {
     position: absolute;
     top: 50%;
@@ -307,14 +308,6 @@ p.pre-head {
   }
   &:hover {
     padding-left: 30px;
-  }
-}
-.footer-inner .button {
-  width: 230px;
-  display: inline-block;
-  @media (min-width: $tablet) {
-    margin-bottom: 120px;
-    margin-top: 30px;
   }
 }
 .content {
@@ -620,6 +613,12 @@ p.pre-head {
 .ans p:last-child {
   padding-bottom: 15px;
 }
+.ans a {
+  color: $textcol;
+  &:hover {
+    text-decoration: none;
+  }
+}
 .qanda {
   @media (min-width: $tablet) {
     padding-bottom: 15px;
@@ -643,19 +642,80 @@ footer {
   }
 }
 .footer-inner {
-  padding: 120px 15px 0;
+  padding: 80px 15px 0;
   @media (min-width: $desktop) {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 75px;
+    padding: 80px 75px 0;
   }
 }
 .footer-inner h2 {
   color: $yellow;
   margin-bottom: 0;
 }
+.copy p {
+  font-size: 14px;
+  margin-top: 50px;
+  color: $midgrey;
+  margin: 0;
+  @media (min-width: $tablet) {
+    text-align: left;
+  }
+}
+.copy p a {
+  text-decoration: underline;
+  margin-left: 10px;
+  color: $midgrey;
+  &:hover {
+    text-decoration: none;
+  }
+}
 .footer-inner h2 + p {
   color: #fff;
+  @media (min-width: $desktop) {
+  	text-rendering: optimizeLegibility;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  }
+}
+.footer-inner .button {
+  width: 230px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 110px;
+  @media (min-width: $tablet) {
+    margin-bottom: 140px;
+    margin-top: 30px;
+  }
+  &:hover {
+    background: $lightgrey;
+    color: $textcol;
+    font-weight: 400;
+  }
+}
+.social {
+  padding-bottom: 50px;
+  @media (min-width: $tablet) {
+    padding-bottom: 0;
+    float: right;
+    margin-top: -10px;
+  }
+}
+.social li {
+  font-size: 30px;
+  display: inline-block;
+}
+.social a {
+  color: $midgrey;
+  text-decoration: none;
+  padding: 6px 10px;
+  margin: 0 10px;
+  @media (max-width: $iphone5) {
+    margin: 0 5px;
+  }
+}
+.social a:hover {
+  color: $lightgrey;
 }
 
 /* Plugin styles */
