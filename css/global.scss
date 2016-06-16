@@ -126,7 +126,7 @@ p.pre-head {
   color: $midgrey;
 }
 .who p:first-child,
-.question,
+.question p,
 .line-wrap {
   font-size: 18px;
 	font-weight: 500;
@@ -579,7 +579,11 @@ button {
     margin-left: -75px;
   }
 }
-.faq svg {
+.question {
+  cursor: pointer;
+  @include clearfix
+}
+.question svg {
   width: 12px;
   height: 7px;
   float: left;
@@ -588,6 +592,13 @@ button {
   @media (min-width: $desktop) {
     margin-right: 20px;
   }
+}
+.question:hover {
+  color: $midgrey;
+}
+.question p {
+  float: left;
+  display: block;
 }
 
 /* Footer */

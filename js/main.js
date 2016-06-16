@@ -16,8 +16,8 @@ $(document).ready(function($) {
   $('.ans').hide();
   $('.qanda').find('.question').click(function(){
     //Expand or collapse this panel
-    $(this).next().slideToggle(200);
+    $(this).next().slideToggle(300);
     //Hide the other panels
-    $('ans').not($(this).next()).slideUp(100);
+    $('ans').not($(this).next()).slideUp(200);
   });
 });

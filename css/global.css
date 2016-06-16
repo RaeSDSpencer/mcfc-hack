@@ -188,7 +188,7 @@ p.pre-head {
   color: #828385; }
 
 .who p:first-child,
-.question,
+.question p,
 .line-wrap {
   font-size: 18px;
   font-weight: 500;
@@ -196,7 +196,7 @@ p.pre-head {
   letter-spacing: -.01em; }
   @media (min-width: 768px) {
     .who p:first-child,
-    .question,
+    .question p,
     .line-wrap {
       font-size: 26px; } }
 
@@ -760,15 +760,29 @@ button {
   .faq-text {
     margin-left: -75px; } }
 
-.faq svg {
+.question {
+  cursor: pointer; }
+  .question:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.question svg {
   width: 12px;
   height: 7px;
   float: left;
   margin-right: 15px;
   margin-top: 10px; }
   @media (min-width: 991px) {
-    .faq svg {
+    .question svg {
       margin-right: 20px; } }
+
+.question:hover {
+  color: #828385; }
+
+.question p {
+  float: left;
+  display: block; }
 
 /* Footer */
 footer {
