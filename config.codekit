@@ -93,6 +93,50 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/hackmcfc-fb-nl.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 127808,
+		"inputAbbreviatedPath": "\/img\/hackmcfc-fb-nl.jpg",
+		"outputAbbreviatedPath": "\/img\/hackmcfc-fb-nl.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/hackmcfc-fb.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 133997,
+		"inputAbbreviatedPath": "\/img\/hackmcfc-fb.jpg",
+		"outputAbbreviatedPath": "\/img\/hackmcfc-fb.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/hackmcfc-tw-nl.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 97376,
+		"inputAbbreviatedPath": "\/img\/hackmcfc-tw-nl.jpg",
+		"outputAbbreviatedPath": "\/img\/hackmcfc-tw-nl.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/hackmcfc-tw.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 107073,
+		"inputAbbreviatedPath": "\/img\/hackmcfc-tw.jpg",
+		"outputAbbreviatedPath": "\/img\/hackmcfc-tw.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/hands-typing.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
