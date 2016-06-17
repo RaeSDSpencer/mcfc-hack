@@ -96,8 +96,7 @@ body {
   text-align: left;
   color: #2f3133;
   line-height: 1.5;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-top: 4px #FFC758 solid; }
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 a {
   transition: color .2s; }
@@ -314,6 +313,7 @@ p.pre-head {
     display: table;
     clear: both; }
   #header svg {
+    transition: width .2s, height .2s;
     width: 59px;
     height: 59px; }
     @media (min-width: 768px) {
@@ -325,7 +325,8 @@ p.pre-head {
     margin-bottom: .15em;
     float: left;
     padding-top: 25px;
-    line-height: .7em; }
+    line-height: .7em;
+    transition: font-size .1s, padding .2s; }
     @media (min-width: 768px) {
       #header h1 {
         font-size: 56px;
@@ -362,7 +363,8 @@ p.pre-head {
         display: block;
         margin-left: 0; } }
   #header .date-wrap {
-    float: left; }
+    float: left;
+    transition: padding-left .4s; }
     @media (min-width: 768px) {
       #header .date-wrap {
         float: right;
@@ -383,20 +385,63 @@ p.pre-head {
       #header .date-wrap {
         padding: 62px 20px 0 0; } }
 
-.sticky-nav svg {
-  width: 37px;
-  height: 37px; }
+#header {
+  margin-bottom: -81px;
+  border-top: 4px #FFC758 solid; }
   @media (min-width: 768px) {
-    .sticky-nav svg {
-      width: 45px;
-      height: 45px; } }
+    #header {
+      margin-bottom: -155px; } }
+
+#header.header-stick {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  border-bottom: solid 1px #DADBDB;
+  z-index: 9999; }
+  @media (max-width: 768px) {
+    #header.header-stick {
+      border-top: 0; } }
+  @media (min-width: 768px) {
+    #header.header-stick {
+      height: 81px; } }
+  #header.header-stick h1 {
+    font-size: 32px;
+    padding-top: 20px; }
+    @media (min-width: 768px) {
+      #header.header-stick h1 {
+        font-size: 46px;
+        padding-top: 23px; } }
+  @media (max-width: 768px) {
+    #header.header-stick .date-wrap {
+      display: none; } }
+  @media (min-width: 768px) {
+    #header.header-stick .date-wrap {
+      float: left;
+      padding: 18px 0 0 15px; } }
+  #header.header-stick .date-wrap:after {
+    display: none; }
+  #header.header-stick svg {
+    width: 37px;
+    height: 37px; }
+    @media (min-width: 768px) {
+      #header.header-stick svg {
+        width: 45px;
+        height: 45px; } }
+  #header.header-stick .logo {
+    margin-top: 11px; }
+    @media (min-width: 768px) {
+      #header.header-stick .logo {
+        margin-top: 14px; } }
 
 /* Stats */
 #clockdiv {
   font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", Impact;
   font-size: 90px;
   width: 100%;
-  padding: 30px 15px 60px;
+  padding: 111px 15px 60px;
   margin: 0 auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -409,7 +454,7 @@ p.pre-head {
     #clockdiv {
       font-size: 140px;
       max-width: 1200px;
-      padding-top: 40px;
+      padding-top: 195px;
       padding-bottom: 90px; } }
   @media (min-width: 991px) {
     #clockdiv {
@@ -423,7 +468,7 @@ p.pre-head {
     width: 50%; }
     @media (min-width: 600px) {
       #clockdiv .clock-part {
-        border-right: #ecedf0 1px solid;
+        border-right: #DADBDB 1px solid;
         text-align: center; }
         #clockdiv .clock-part:nth-child(1) {
           width: 18%; }

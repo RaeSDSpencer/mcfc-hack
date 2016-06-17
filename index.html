@@ -393,5 +393,15 @@ $(document).ready(function($) {
     $('ans').not($(this).next()).slideUp(200);
   });
 });
+// Sticky nav
+var  mn = $("#header");
+    mns = "header-stick";
+$(window).scroll(function() {
+  if( $(this).scrollTop() > 1 ) {
+    mn.addClass(mns);
+  } else {
+    mn.removeClass(mns);
+  }
+});
 </script>
 </body></html>

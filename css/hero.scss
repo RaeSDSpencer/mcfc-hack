@@ -11,6 +11,7 @@
 	overflow: hidden;
 	@include clearfix;
 	svg {
+		transition: width .2s, height .2s;
 		width: 59px;
 		height: 59px;
 		@media (min-width: $tablet) {
@@ -24,6 +25,7 @@
 		float: left;
 		padding-top: 25px;
     line-height: .7em;
+		transition: font-size .1s, padding .2s;
 		@media (min-width: $tablet) {
 		  font-size: 56px;
 			padding-top: 60px;
@@ -65,6 +67,7 @@
 	}
 	.date-wrap {
 		float: left;
+		transition: padding-left .4s;
 		@media (min-width: $tablet) {
 			float: right;
 			position: relative;
@@ -87,12 +90,61 @@
     }
 	}
 }
-.sticky-nav svg {
-	width: 37px;
-	height: 37px;
+#header {
+	margin-bottom: -81px;
+	border-top: 4px $yellow solid;
 	@media (min-width: $tablet) {
-		width: 45px;
-		height: 45px;
+		margin-bottom: -155px;
+	}
+}
+#header.header-stick {
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	border-bottom: solid 1px $stroke;
+	z-index: 9999;
+	@media (max-width: $tablet) {
+		border-top: 0;
+	}
+	@media (min-width: $tablet) {
+		height: 81px;
+	}
+	h1 {
+		font-size: 32px;
+		padding-top: 20px;
+		@media (min-width: $tablet) {
+			font-size: 46px;
+			padding-top: 23px;
+		}
+	}
+	.date-wrap {
+		@media (max-width: $tablet) {
+			display: none;
+		}
+		@media (min-width: $tablet) {
+			float: left;
+			padding: 18px 0 0 15px;
+		}
+		&:after {
+			display: none;
+		}
+	}
+	svg {
+		width: 37px;
+		height: 37px;
+		@media (min-width: $tablet) {
+			width: 45px;
+			height: 45px;
+		}
+	}
+	.logo {
+		margin-top: 11px;
+		@media (min-width: $tablet) {
+			margin-top: 14px;
+		}
 	}
 }
 
@@ -101,7 +153,7 @@
 	font-family: $gotham;
 	font-size: 90px;
   width: 100%;
-  padding: 30px 15px 60px;
+  padding: 111px 15px 60px;
   margin: 0 auto;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -110,7 +162,7 @@
   @media (min-width: $tablet) {
     font-size: 140px;
     max-width: 1200px;
-    padding-top: 40px;
+    padding-top: 195px;
     padding-bottom: 90px;
   }
   @media (min-width: $desktop) {
@@ -125,7 +177,7 @@
 	  float: left;
     width: 50%;
     @media (min-width: $smtablet) {
-      border-right: $lightgrey 1px solid;
+      border-right: $stroke 1px solid;
     	text-align: center;
       &:nth-child(1) {
         width: 18%;

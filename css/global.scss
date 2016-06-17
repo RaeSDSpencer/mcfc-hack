@@ -4,6 +4,7 @@ $textcol:			#2f3133;
 $black:				#2a2c2e;
 $darkgrey:		#313335;
 $midgrey:			#828385;
+$stroke:      #DADBDB;
 $lightgrey:		#ecedf0;
 $gotham:			"Gotham Cond SSm A","Gotham Cond SSm B",Impact;
 $iphone5:     320px;
@@ -29,7 +30,6 @@ body {
 	color: $textcol;
 	line-height: 1.5;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	border-top: 4px $yellow solid;
 }
 a {
   transition: color .2s;
