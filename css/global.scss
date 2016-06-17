@@ -285,7 +285,7 @@ p.pre-head {
     padding-left: 45px;
   }
 }
-.about button {
+.about .button {
   transform: translate(0,-50%);
 	@media (min-width: $tablet) {
     margin-right: -25px;
@@ -639,17 +639,72 @@ p.pre-head {
   }
 }
 .qanda {
-  @media (min-width: $tablet) {
-    padding-bottom: 15px;
-  }
+  padding-bottom: 15px;
 }
 
 /* partners */
 .partners {
   text-align: center;
+  @media (min-width: $tablet) {
+    padding: 0 25px 25px;
+  }
 }
 .partners-inner {
+  padding: 100px 0 135px;
   background: $lightgrey;
+  @media (min-width: $tablet) {
+    padding: 100px 0 150px;
+  }
+}
+.partners li {
+  display: inline-block;
+}
+.logos {
+  padding-bottom: 30px;
+}
+.logos li {
+  padding: 0 15px 80px;
+  @media (min-width: $tablet) {
+    padding: 0 30px 80px;
+  }
+}
+.opta svg {
+  width: 113.7px;
+  height: 49px;
+  @media (min-width: $tablet) {
+    width: 127.9px;
+    height: 55.1px;
+  }
+}
+.premier-league img {
+  width: 123px;
+  height: auto;
+  @media (min-width: $tablet) {
+    width: 139px;
+  }
+}
+.sap svg {
+  width: 85px;
+  height: 42px;
+  @media (min-width: $tablet) {
+    width: 95px;
+    height: 47px;
+  }
+}
+.chyronhego img {
+  width: 190px;
+  height: auto;
+  @media (min-width: $tablet) {
+    width: 265px;
+  }
+}
+.play svg {
+  width: 180px;
+  height: 44px;
+  @media (min-width: $tablet) {
+    width: 196px;
+    height: 48px;
+  }
 }
 
 /* Footer */

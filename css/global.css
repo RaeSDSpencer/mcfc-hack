@@ -487,15 +487,15 @@ p.pre-head {
     font-weight: 500;
     padding-left: 45px; }
 
-.about button {
+.about .button {
   transform: translate(0, -50%); }
   @media (min-width: 768px) {
-    .about button {
+    .about .button {
       margin-right: -25px;
       float: right;
       width: 45%; } }
   @media (min-width: 991px) {
-    .about button {
+    .about .button {
       width: 40%; } }
 
 .but-white {
@@ -818,16 +818,72 @@ p.pre-head {
   .ans a:hover {
     text-decoration: none; }
 
-@media (min-width: 768px) {
-  .qanda {
-    padding-bottom: 15px; } }
+.qanda {
+  padding-bottom: 15px; }
 
 /* partners */
 .partners {
   text-align: center; }
+  @media (min-width: 768px) {
+    .partners {
+      padding: 0 25px 25px; } }
 
 .partners-inner {
+  padding: 100px 0 135px;
   background: #ecedf0; }
+  @media (min-width: 768px) {
+    .partners-inner {
+      padding: 100px 0 150px; } }
+
+.partners li {
+  display: inline-block; }
+
+.logos {
+  padding-bottom: 30px; }
+
+.logos li {
+  padding: 0 15px 80px; }
+  @media (min-width: 768px) {
+    .logos li {
+      padding: 0 30px 80px; } }
+
+.opta svg {
+  width: 113.7px;
+  height: 49px; }
+  @media (min-width: 768px) {
+    .opta svg {
+      width: 127.9px;
+      height: 55.1px; } }
+
+.premier-league img {
+  width: 123px;
+  height: auto; }
+  @media (min-width: 768px) {
+    .premier-league img {
+      width: 139px; } }
+
+.sap svg {
+  width: 85px;
+  height: 42px; }
+  @media (min-width: 768px) {
+    .sap svg {
+      width: 95px;
+      height: 47px; } }
+
+.chyronhego img {
+  width: 190px;
+  height: auto; }
+  @media (min-width: 768px) {
+    .chyronhego img {
+      width: 265px; } }
+
+.play svg {
+  width: 180px;
+  height: 44px; }
+  @media (min-width: 768px) {
+    .play svg {
+      width: 196px;
+      height: 48px; } }
 
 /* Footer */
 footer {
