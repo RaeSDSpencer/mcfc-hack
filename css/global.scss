@@ -78,6 +78,12 @@ h3 {
     font-size: 40px;
   }
 }
+h4 {
+  font-size: 26px;
+	letter-spacing: -.005em;
+	margin-bottom: 2em;
+  color: $midgrey;
+}
 p {
   font-size: 16px;
 	margin-bottom: 1.2em;
@@ -612,8 +618,10 @@ p.pre-head {
 .question path {
   fill: $textcol;
 }
-.question:hover {
-  color: $midgrey;
+@media (min-width: $tablet) {
+  .question:hover {
+    color: $midgrey;
+  }
 }
 .question p {
   margin-bottom: .8em;
@@ -638,7 +646,10 @@ p.pre-head {
 
 /* partners */
 .partners {
-
+  text-align: center;
+}
+.partners-inner {
+  background: $lightgrey;
 }
 
 /* Footer */

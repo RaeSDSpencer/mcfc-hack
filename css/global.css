@@ -146,6 +146,12 @@ h3 {
     h3 {
       font-size: 40px; } }
 
+h4 {
+  font-size: 26px;
+  letter-spacing: -.005em;
+  margin-bottom: 2em;
+  color: #828385; }
+
 p {
   font-size: 16px;
   margin-bottom: 1.2em;
@@ -795,9 +801,9 @@ p.pre-head {
 .question path {
   fill: #2f3133; }
 
-.question:hover {
-  color: #828385; }
-
+@media (min-width: 768px) {
+  .question:hover {
+    color: #828385; } }
 .question p {
   margin-bottom: .8em; }
 
@@ -817,6 +823,12 @@ p.pre-head {
     padding-bottom: 15px; } }
 
 /* partners */
+.partners {
+  text-align: center; }
+
+.partners-inner {
+  background: #ecedf0; }
+
 /* Footer */
 footer {
   background: #2a2c2e;
