@@ -903,8 +903,7 @@ p.pre-head {
       padding: 0 25px 25px; } }
 
 .partners-inner {
-  padding: 100px 0 135px;
-  background: #ecedf0; }
+  padding: 100px 0 135px; }
   @media (min-width: 768px) {
     .partners-inner {
       padding: 100px 0 150px; } }
