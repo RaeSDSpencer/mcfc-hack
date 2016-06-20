@@ -759,6 +759,9 @@ p.pre-head {
       .schedule-inner:after {
         left: 277px; } }
 
+.schedule-middle {
+  padding-top: 0; }
+
 .schedule-first:after {
   display: none; }
 
