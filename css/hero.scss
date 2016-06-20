@@ -35,7 +35,7 @@
 	p {
 		font-family: $gotham;
 		color: $midgrey;
-		font-size: 16px;
+		font-size: 15px;
 		line-height: 1.4;
     letter-spacing: .01em;
     text-transform: uppercase;
@@ -47,7 +47,7 @@
       margin-bottom: 1.3em;
     }
 		@media (max-width: 374px) {
-			font-size: 14px;
+			font-size: 13px;
       letter-spacing: 0;
 		}
 	}
