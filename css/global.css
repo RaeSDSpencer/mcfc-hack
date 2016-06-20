@@ -979,31 +979,13 @@ p.pre-head {
     .premier-league img {
       width: 139px; } }
 
-.sap svg {
+.sap img {
   width: 85px;
   height: 42px; }
   @media (min-width: 768px) {
-    .sap svg {
+    .sap img {
       width: 95px;
       height: 47px; } }
-
-.lt-ie10 .sap svg,
-.lt-ie9 .sap svg {
-  display: none; }
-
-.sap img {
-  display: none; }
-
-.lt-ie10 .sap img,
-.lt-ie9 .sap img {
-  display: block;
-  width: 85px;
-  height: auto;
-  margin-bottom: 9px; }
-  @media (min-width: 768px) {
-    .lt-ie10 .sap img,
-    .lt-ie9 .sap img {
-      width: 95px; } }
 
 .chyronhego img {
   width: 190px;
