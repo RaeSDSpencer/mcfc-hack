@@ -102,7 +102,7 @@ a {
   transition: color .2s;
   color: #2f3133; }
 
-acronym {
+abbr {
   border-bottom: 1px #828385 dotted; }
 
 /* Type */
