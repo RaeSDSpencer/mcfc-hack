@@ -88,7 +88,8 @@ h4 {
 	margin-bottom: 2em;
   color: $midgrey;
 }
-p {
+p,
+.faq li {
   font-size: 16px;
 	margin-bottom: 1.2em;
 	font-weight: 300;
@@ -96,6 +97,11 @@ p {
 	@media (min-width: $tablet) {
     font-size: 20px;
   }
+}
+.faq li {
+  list-style-position: outside;
+  margin-left: 25px;
+  list-style-type: circle;
 }
 .schedule p {
   @media (min-width: $tablet) {
@@ -640,7 +646,9 @@ p.pre-head {
 .question p {
   margin-bottom: .8em;
 }
-.faq p {
+.faq p,
+.faq ul,
+.faq ol {
   padding-left: 25px;
 }
 .ans p:last-child {
