@@ -286,6 +286,9 @@ p.pre-head {
     padding-left: 45px;
   }
 }
+.lt-ie10 .button svg {
+  top: 25%;
+}
 .about .button {
   transform: translate(0,-50%);
 	@media (min-width: $tablet) {
