@@ -761,6 +761,11 @@ p.pre-head {
 
 .schedule-middle {
   padding-top: 0; }
+  .schedule-middle h3:after {
+    top: 15px; }
+    @media (min-width: 768px) {
+      .schedule-middle h3:after {
+        top: 23px; } }
 
 .schedule-first:after {
   display: none; }

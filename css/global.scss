@@ -499,6 +499,12 @@ p.pre-head {
 }
 .schedule-middle {
   padding-top: 0;
+  h3:after {
+    top: 15px;
+    @media (min-width: $tablet) {
+      top: 23px;
+    }
+  }
 }
 .schedule-first:after {
   display: none;
