@@ -355,6 +355,10 @@ p.pre-head {
     background-size: cover;
   }
 }
+.lt-ie10 .about-top {
+  background: $blue url("../img/ie-bg-image.jpg") no-repeat left top;
+  background-size: cover;
+}
 .line-wrap {
   @media (min-width: $desktop) {
     position: relative;
@@ -689,6 +693,21 @@ p.pre-head {
   @media (min-width: $tablet) {
     width: 95px;
     height: 47px;
+  }
+}
+.lt-ie10 .sap svg {
+  display: none;
+}
+.sap img {
+  display: none;
+}
+.lt-ie10 .sap img {
+  display: block;
+  width: 85px;
+  height: auto;
+  margin-bottom: 9px;
+  @media (min-width: $tablet) {
+    width: 95px;
   }
 }
 .chyronhego img {

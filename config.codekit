@@ -157,6 +157,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/ie-bg-image.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 68539,
+		"inputAbbreviatedPath": "\/img\/ie-bg-image.jpg",
+		"outputAbbreviatedPath": "\/img\/ie-bg-image.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/map.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -186,6 +197,17 @@
 		"initialSize": 24127,
 		"inputAbbreviatedPath": "\/img\/part-premier-league.png",
 		"outputAbbreviatedPath": "\/img\/part-premier-league.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/part-sap.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9416,
+		"inputAbbreviatedPath": "\/img\/part-sap.png",
+		"outputAbbreviatedPath": "\/img\/part-sap.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
