@@ -589,7 +589,8 @@ p.pre-head {
     font-weight: 500;
     padding-left: 45px; }
 
-.lt-ie10 .button svg {
+.lt-ie10 .button svg,
+.lt-ie9 .button svg {
   top: 25%; }
 
 .about .button {
@@ -652,7 +653,8 @@ p.pre-head {
       background: linear-gradient(rgba(199, 237, 255, 0.85) 70%, #c7edff), url("../img/hands-typing.jpg") no-repeat left top;
       background-size: cover; } }
 
-.lt-ie10 .about-top {
+.lt-ie10 .about-top,
+.lt-ie9 .about-top {
   background: #C7EDFF url("../img/ie-bg-image.jpg") no-repeat left top;
   background-size: cover; }
 
@@ -985,19 +987,22 @@ p.pre-head {
       width: 95px;
       height: 47px; } }
 
-.lt-ie10 .sap svg {
+.lt-ie10 .sap svg,
+.lt-ie9 .sap svg {
   display: none; }
 
 .sap img {
   display: none; }
 
-.lt-ie10 .sap img {
+.lt-ie10 .sap img,
+.lt-ie9 .sap img {
   display: block;
   width: 85px;
   height: auto;
   margin-bottom: 9px; }
   @media (min-width: 768px) {
-    .lt-ie10 .sap img {
+    .lt-ie10 .sap img,
+    .lt-ie9 .sap img {
       width: 95px; } }
 
 .chyronhego img {

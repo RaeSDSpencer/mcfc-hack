@@ -309,7 +309,8 @@ p.pre-head {
     padding-left: 45px;
   }
 }
-.lt-ie10 .button svg {
+.lt-ie10 .button svg,
+.lt-ie9 .button svg {
   top: 25%;
 }
 .about .button {
@@ -382,7 +383,8 @@ p.pre-head {
     background-size: cover;
   }
 }
-.lt-ie10 .about-top {
+.lt-ie10 .about-top,
+.lt-ie9 .about-top {
   background: $blue url("../img/ie-bg-image.jpg") no-repeat left top;
   background-size: cover;
 }
@@ -728,13 +730,15 @@ p.pre-head {
     height: 47px;
   }
 }
-.lt-ie10 .sap svg {
+.lt-ie10 .sap svg,
+.lt-ie9 .sap svg {
   display: none;
 }
 .sap img {
   display: none;
 }
-.lt-ie10 .sap img {
+.lt-ie10 .sap img,
+.lt-ie9 .sap img {
   display: block;
   width: 85px;
   height: auto;
