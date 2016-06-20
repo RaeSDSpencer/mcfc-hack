@@ -109,9 +109,12 @@ p,
   list-style-type: circle;
 }
 .data li {
+  @media (min-width: $desktop) {
+    margin-left: -125px;
+    padding-left: 38%;
+  }
   @media (min-width: 1420px) {
     padding-right: 12%;
-    margin-left: 0;
   }
 }
 .schedule p {
