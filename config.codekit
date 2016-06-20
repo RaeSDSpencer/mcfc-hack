@@ -36,15 +36,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/css\/global.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/global.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/css\/global.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
