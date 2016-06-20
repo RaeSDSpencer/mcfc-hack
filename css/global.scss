@@ -659,7 +659,8 @@ p.pre-head {
 }
 .partners-inner {
   padding: 100px 0 135px;
-  border-top: 1px solid $stroke;
+  /*border-top: 1px solid $stroke;*/
+  background: $lightgrey;
   @media (min-width: $tablet) {
     padding: 100px 0 150px;
   }
