@@ -567,6 +567,9 @@ p.pre-head {
     padding-right: 75px;
   }
 }
+.faq-text-outer {
+  background: $lightgrey;
+}
 .who h1,
 .faq h1 {
   padding-top: 50px;
@@ -651,7 +654,6 @@ p.pre-head {
 }
 .partners-inner {
   padding: 100px 0 135px;
-  background: $lightgrey;
   @media (min-width: $tablet) {
     padding: 100px 0 150px;
   }
