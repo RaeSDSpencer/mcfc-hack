@@ -987,12 +987,11 @@ p.pre-head {
     .logos li {
       padding: 0 30px 80px; } }
 
-.opta svg {
-  width: 113.7px;
+.opta img {
+  width: auto;
   height: 49px; }
   @media (min-width: 768px) {
-    .opta svg {
-      width: 127.9px;
+    .opta img {
       height: 55.1px; } }
 
 .premier-league img {

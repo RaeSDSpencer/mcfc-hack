@@ -731,11 +731,10 @@ p.pre-head {
     padding: 0 30px 80px;
   }
 }
-.opta svg {
-  width: 113.7px;
+.opta img {
+  width: auto;
   height: 49px;
   @media (min-width: $tablet) {
-    width: 127.9px;
     height: 55.1px;
   }
 }

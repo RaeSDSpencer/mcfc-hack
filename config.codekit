@@ -190,6 +190,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/part-opta.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24043,
+		"inputAbbreviatedPath": "\/img\/part-opta.png",
+		"outputAbbreviatedPath": "\/img\/part-opta.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/part-premier-league.png": {
 		"fileType": 32768,
 		"ignore": 0,
