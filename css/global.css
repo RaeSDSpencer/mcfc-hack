@@ -1014,7 +1014,8 @@ p.pre-head {
   height: auto; }
   @media (min-width: 768px) {
     .chyronhego img {
-      width: 265px; } }
+      width: 265px;
+      margin-bottom: 3px; } }
 
 .play svg {
   width: 180px;
