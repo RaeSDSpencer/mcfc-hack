@@ -216,20 +216,20 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.15706e+06,
+		"initialSize": 353769,
 		"inputAbbreviatedPath": "\/img\/where-academy.jpg",
 		"outputAbbreviatedPath": "\/img\/where-academy.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/where-inerior.jpg": {
+	"\/img\/where-interior.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 431998,
-		"inputAbbreviatedPath": "\/img\/where-inerior.jpg",
-		"outputAbbreviatedPath": "\/img\/where-inerior.jpg",
+		"initialSize": 193282,
+		"inputAbbreviatedPath": "\/img\/where-interior.jpg",
+		"outputAbbreviatedPath": "\/img\/where-interior.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
