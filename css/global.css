@@ -858,11 +858,11 @@ p.pre-head {
       top: 0;
       left: 0;
       width: 445px;
-      height: 320px;
+      height: 330px;
       background: #C7EDFF; } }
   @media (min-width: 768px) and (min-width: 991px) {
     .who-text-outer:before {
-      height: 350px;
+      height: 380px;
       width: 500px; } }
   @media (min-width: 768px) and (min-width: 1200px) {
     .who-text-outer:before {
