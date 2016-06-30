@@ -68,6 +68,7 @@ h2 {
 	letter-spacing: -.005em;
 	padding-top: .8em;
 	margin-bottom: .3em;
+  line-height: 1;
 	@media (min-width: $tablet) {
     font-size: 60px;
   }
@@ -81,6 +82,7 @@ h3 {
 	letter-spacing: -.005em;
 	margin-top: .8em;
 	margin-bottom: .3em;
+  line-height: 1;
 	@media (min-width: $tablet) {
     font-size: 40px;
   }

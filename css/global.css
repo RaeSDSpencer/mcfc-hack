@@ -134,7 +134,8 @@ h2 {
   font-size: 50px;
   letter-spacing: -.005em;
   padding-top: .8em;
-  margin-bottom: .3em; }
+  margin-bottom: .3em;
+  line-height: 1; }
   @media (min-width: 768px) {
     h2 {
       font-size: 60px; } }
@@ -147,7 +148,8 @@ h3 {
   font-size: 30px;
   letter-spacing: -.005em;
   margin-top: .8em;
-  margin-bottom: .3em; }
+  margin-bottom: .3em;
+  line-height: 1; }
   @media (min-width: 768px) {
     h3 {
       font-size: 40px; } }
@@ -494,11 +496,64 @@ p.pre-head {
 .code-of-conduct .data-wrap {
   margin-top: 150px; }
 
-#clockdiv {
+.clockdiv {
   font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", Impact;
   font-size: 90px;
   width: 100%;
   padding: 111px 15px 60px;
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  .clockdiv:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 768px) {
+    .clockdiv {
+      font-size: 140px;
+      max-width: 1200px;
+      padding-top: 195px;
+      padding-bottom: 90px; } }
+  @media (min-width: 991px) {
+    .clockdiv {
+      font-size: 160px;
+      padding-left: 50px;
+      padding-right: 50px; } }
+  .clockdiv .big-no {
+    letter-spacing: -.03em; }
+  .clockdiv .clock-part {
+    float: left;
+    width: 50%; }
+    @media (min-width: 600px) {
+      .clockdiv .clock-part {
+        border-right: #DADBDB 1px solid;
+        text-align: center; }
+        .clockdiv .clock-part:nth-child(1) {
+          width: 21%; }
+        .clockdiv .clock-part:nth-child(2) {
+          width: 26%; }
+        .clockdiv .clock-part:nth-child(3) {
+          width: 26%; }
+        .clockdiv .clock-part:nth-child(4) {
+          border-right: 0;
+          width: 27%; } }
+  .clockdiv .smalltext {
+    font-size: 18px;
+    color: #828385;
+    text-transform: uppercase;
+    margin-bottom: .9em;
+    margin-top: -.6em; }
+    @media (min-width: 768px) {
+      .clockdiv .smalltext {
+        font-size: 20px;
+        padding-top: 5px; } }
+
+#clockdiv {
+  font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", Impact;
+  font-size: 90px;
+  width: 100%;
+  padding: 30px 15px 60px;
   margin: 0 auto;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -511,7 +566,7 @@ p.pre-head {
     #clockdiv {
       font-size: 140px;
       max-width: 1200px;
-      padding-top: 195px;
+      padding-top: 50px;
       padding-bottom: 90px; } }
   @media (min-width: 991px) {
     #clockdiv {
@@ -522,20 +577,13 @@ p.pre-head {
     letter-spacing: -.03em; }
   #clockdiv .clock-part {
     float: left;
-    width: 50%; }
+    width: 25%; }
     @media (min-width: 600px) {
       #clockdiv .clock-part {
-        border-right: #DADBDB 1px solid;
+        border-right: #fff 1px solid;
         text-align: center; }
-        #clockdiv .clock-part:nth-child(1) {
-          width: 21%; }
-        #clockdiv .clock-part:nth-child(2) {
-          width: 26%; }
-        #clockdiv .clock-part:nth-child(3) {
-          width: 26%; }
         #clockdiv .clock-part:nth-child(4) {
-          border-right: 0;
-          width: 27%; } }
+          border-right: 0; } }
   #clockdiv .smalltext {
     font-size: 18px;
     color: #828385;
