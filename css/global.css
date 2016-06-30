@@ -549,6 +549,52 @@ p.pre-head {
         font-size: 20px;
         padding-top: 5px; } }
 
+#countdown {
+  font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", Impact;
+  font-size: 90px;
+  width: 100%;
+  padding: 30px 15px 60px;
+  margin: 0 auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  #countdown:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media (min-width: 768px) {
+    #countdown {
+      font-size: 140px;
+      max-width: 1200px;
+      padding-top: 50px;
+      padding-bottom: 90px; } }
+  @media (min-width: 991px) {
+    #countdown {
+      font-size: 160px;
+      padding-left: 50px;
+      padding-right: 50px; } }
+  #countdown .big-no {
+    letter-spacing: -.03em; }
+  #countdown .clock-part {
+    float: left;
+    width: 25%; }
+    @media (min-width: 600px) {
+      #countdown .clock-part {
+        border-right: #fff 1px solid;
+        text-align: center; }
+        #countdown .clock-part:nth-child(4) {
+          border-right: 0; } }
+  #countdown .smalltext {
+    font-size: 18px;
+    color: #828385;
+    text-transform: uppercase;
+    margin-bottom: .9em;
+    margin-top: -.6em; }
+    @media (min-width: 768px) {
+      #countdown .smalltext {
+        font-size: 20px;
+        padding-top: 5px; } }
+
 /* About */
 @media (min-width: 768px) {
   .about-wrap {
