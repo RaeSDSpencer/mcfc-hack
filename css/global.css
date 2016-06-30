@@ -549,7 +549,7 @@ p.pre-head {
         font-size: 20px;
         padding-top: 5px; } }
 
-#clockdiv {
+#countdown {
   font-family: "Gotham Cond SSm A", "Gotham Cond SSm B", Impact;
   font-size: 90px;
   width: 100%;
@@ -558,40 +558,40 @@ p.pre-head {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
-  #clockdiv:after {
+  #countdown:after {
     content: "";
     display: table;
     clear: both; }
   @media (min-width: 768px) {
-    #clockdiv {
+    #countdown {
       font-size: 140px;
       max-width: 1200px;
       padding-top: 50px;
       padding-bottom: 90px; } }
   @media (min-width: 991px) {
-    #clockdiv {
+    #countdown {
       font-size: 160px;
       padding-left: 50px;
       padding-right: 50px; } }
-  #clockdiv .big-no {
+  #countdown .big-no {
     letter-spacing: -.03em; }
-  #clockdiv .clock-part {
+  #countdown .clock-part {
     float: left;
     width: 25%; }
     @media (min-width: 600px) {
-      #clockdiv .clock-part {
+      #countdown .clock-part {
         border-right: #fff 1px solid;
         text-align: center; }
-        #clockdiv .clock-part:nth-child(4) {
+        #countdown .clock-part:nth-child(4) {
           border-right: 0; } }
-  #clockdiv .smalltext {
+  #countdown .smalltext {
     font-size: 18px;
     color: #828385;
     text-transform: uppercase;
     margin-bottom: .9em;
     margin-top: -.6em; }
     @media (min-width: 768px) {
-      #clockdiv .smalltext {
+      #countdown .smalltext {
         font-size: 20px;
         padding-top: 5px; } }
 
