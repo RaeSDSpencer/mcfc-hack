@@ -73,7 +73,7 @@
     <span class="big-no"><span class="count run">2</span>.<span class="count run">1</span>M</span>
     <div class="smalltext">Metres run</div>
   </div>
-</aside><!-- .clockdiv -->
+</aside><!-- #clockdiv -->
 
 <section class="about-wrap">
   <div class="about">
@@ -112,36 +112,6 @@
         <p>Digital innovation experts and event supplier, Play, will run a prototyping workshop for anyone new to hacks. Come along and pick up new skills in an incredibly dynamic environment.</p>
       </div>
     </div>
-
-    <div class="content">
-      <h2>Deadline for applications</h2>
-    </div>
-
-    <div class="countdown">
-      <div id="clockdiv">
-
-        <div class="clock-part">
-          <span class="days"></span>
-          <div class="smalltext">Days</div>
-        </div>
-
-        <div class="clock-part">
-          <span class="hours"></span>
-          <div class="smalltext">Hours</div>
-        </div>
-
-        <div class="clock-part">
-          <span class="minutes"></span>
-          <div class="smalltext">Minutes</div>
-        </div>
-
-        <div class="clock-part">
-          <span class="seconds"></span>
-          <div class="smalltext">Seconds</div>
-        </div>
-
-      </div>
-    </div><!-- .countdown -->
 
   </div><!-- .about -->
 </section><!-- .about-wrap -->
@@ -237,7 +207,7 @@
     <div class="who-text">
       <p>Anyone can apply for a place on the hack. From experienced professional developers to students to season ticket holders with an idea. Everyone is welcome. We’re looking for analysts, visualisers, programmers, designers and anyone in between.</p>
       <p>We encourage applications from seasoned pros as well as young prodigys, we’re open to all. Please note places are very limited so <a href="apply.html">register here</a> and do let us know why you want to attend the hack.</p>
-      <p><strong>The deadline for applications is 10am on Monday 11th July.</strong> We will let successful applicants know by the 15th July 2016.</p>
+      <p>The deadline for applications is 10am on Monday 11th July. We will let successful applicants know by the 15th July 2016.</p>
       <a class="button but-big" href="apply.html">
         <span class="button-text">Register here</span>
       </a>
@@ -504,47 +474,5 @@ $(window).scroll(function() {
     mn.removeClass(mns);
   }
 });
-// Countdown timer
-function getTimeRemaining(endtime) {
-  var t = Date.parse(endtime) - Date.parse(new Date());
-  var seconds = Math.floor((t / 1000) % 60);
-  var minutes = Math.floor((t / 1000 / 60) % 60);
-  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-  var days = Math.floor(t / (1000 * 60 * 60 * 24));
-  return {
-    'total': t,
-    'days': days,
-    'hours': hours,
-    'minutes': minutes,
-    'seconds': seconds
-  };
-}
-
-function initializeClock(id, endtime) {
-  var clock = document.getElementById(id);
-  var daysSpan = clock.querySelector('.days');
-  var hoursSpan = clock.querySelector('.hours');
-  var minutesSpan = clock.querySelector('.minutes');
-  var secondsSpan = clock.querySelector('.seconds');
-
-  function updateClock() {
-    var t = getTimeRemaining(endtime);
-
-    daysSpan.innerHTML = t.days;
-    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-
-    if (t.total <= 0) {
-      clearInterval(timeinterval);
-    }
-  }
-
-  updateClock();
-  var timeinterval = setInterval(updateClock, 1000);
-}
-
-var deadline = new Date(Date.parse(new Date(2016, 6, 15, 10, 0, 0)));
-initializeClock('clockdiv', deadline);
 </script>
 </body></html>
