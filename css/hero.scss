@@ -239,7 +239,7 @@
     }
   }
 }
-#countdown{
+#countdown {
 	font-family: $gotham;
 	font-size: 70px;
   width: 100%;
@@ -249,6 +249,9 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
   @include clearfix;
+  @media (max-width: $iphone5) {
+		font-size: 60px;
+	}
   @media (min-width: $tablet) {
     font-size: 140px;
     max-width: 1200px;
